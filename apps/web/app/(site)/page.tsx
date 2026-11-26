@@ -32,16 +32,16 @@ export default function HomePage() {
         <ContourBackdrop />
         <div className="container hero-inner">
           <div>
-            <span className="season-pill"><span className="dot" /> {seasonLabels[season]} · {zone.name}</span>
-            <h1>Hari ini <em>di lahan</em></h1>
-            <p className="lead">{seasonMessage(season)} Lihat apa yang sebaiknya Anda kerjakan sekarang, lalu hitung kebutuhannya dengan alat yang jelas asumsinya.</p>
-            <div className="hero-actions">
+            <span className="season-pill reveal reveal-1"><span className="dot" /> {seasonLabels[season]} · {zone.name}</span>
+            <h1 className="reveal reveal-2">Hari ini <em>di lahan</em></h1>
+            <p className="lead reveal reveal-3">{seasonMessage(season)} Lihat apa yang sebaiknya Anda kerjakan sekarang, lalu hitung kebutuhannya dengan alat yang jelas asumsinya.</p>
+            <div className="hero-actions reveal reveal-4">
               <Link className="btn btn-primary" href="/app">Lihat yang cocok ditanam sekarang <IconArrow style={{ width: 18, height: 18 }} /></Link>
               <Link className="btn btn-secondary" href="/panduan">Baca panduan</Link>
             </div>
-            <p className="muted small" style={{ marginTop: 20 }}>{formatDate(now)} · Panduan pertanian berbahasa Indonesia</p>
+            <p className="muted small reveal reveal-5" style={{ marginTop: 20 }}>{formatDate(now)} · Panduan pertanian berbahasa Indonesia</p>
           </div>
-          <aside className="hero-card" aria-label="Ringkasan kegiatan bulan ini">
+          <aside className="hero-card reveal reveal-3" aria-label="Ringkasan kegiatan bulan ini">
             <span className="eyebrow">Sedang waktunya</span>
             <h3>Cabai · {zone.name}</h3>
             <p className="muted small">Bulan {['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'][month - 1]}</p>

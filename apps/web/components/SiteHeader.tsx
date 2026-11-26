@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { BrandMark } from './BrandMark';
@@ -17,8 +18,17 @@ const links = [
 export function SiteHeader() {
   const pathname = usePathname();
   const { mode, toggle } = useTheme();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const update = () => setScrolled(window.scrollY > 8);
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    return () => window.removeEventListener('scroll', update);
+  }, []);
+
   return (
-    <header className="site-header">
+    <header className={`site-header${scrolled ? ' is-scrolled' : ''}`}>
       <div className="container site-header-inner">
         <BrandMark />
         <nav className="site-nav" aria-label="Navigasi utama">
@@ -35,6 +45,7 @@ export function SiteHeader() {
           </button>
           <Link className="btn btn-primary btn-small header-cta" href="/app" aria-label="Buka aplikasi SABDITANI">
             <span className="header-cta-text">Buka Aplikasi</span>
+            <span className="header-cta-short">Buka</span>
             <IconArrow style={{ width: 16, height: 16 }} />
           </Link>
         </div>

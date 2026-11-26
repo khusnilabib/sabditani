@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   transpilePackages: ['@sabditani/core', '@sabditani/tokens'],
   output: 'export',
   trailingSlash: true,
+  devIndicators: false,
   images: { unoptimized: true },
   poweredByHeader: false,
 };
