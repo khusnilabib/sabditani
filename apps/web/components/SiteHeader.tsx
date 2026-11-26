@@ -12,8 +12,7 @@ import { useTheme } from './ThemeProvider';
 const siteLinks = [
   { href: '/panduan', label: 'Panduan' },
   { href: '/komoditas', label: 'Komoditas' },
-  { href: '/hama', label: 'Hama & Penyakit' },
-  { href: '/tentang', label: 'Tentang' },
+  { href: '/app/diagnosa', label: 'Diagnosa' },
 ];
 
 const drawerGroups = [

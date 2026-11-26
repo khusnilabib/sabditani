@@ -7,6 +7,15 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="container">
+        <div className="site-footer-quick">
+          <strong>SABDITANI</strong>
+          <span>Panduan pertanian berbahasa Indonesia</span>
+          <nav aria-label="Navigasi singkat">
+            <Link href="/panduan">Panduan</Link>
+            <Link href="/komoditas">Komoditas</Link>
+            <Link href="/app/diagnosa">Diagnosa</Link>
+          </nav>
+        </div>
         <div className="site-footer-inner">
           <div>
             <BrandMark />

@@ -4,8 +4,12 @@ import {
   seasonLabels, seasonMessage, site, tools, zones,
 } from '@sabditani/core';
 import { ContourBackdrop } from '@/components/ContourBackdrop';
+import { CropIcon } from '@/components/CropIcon';
 import { VerifiedSeal } from '@/components/VerifiedSeal';
-import { IconArrow, IconCalculator, IconCalendar, IconDiagnose, IconExternal, IconLeaf, IconSeal } from '@/components/Icons';
+import {
+  IconArrow, IconCalculator, IconCalendar, IconDiagnose, IconExternal,
+  IconHome, IconLeaf, IconSeal,
+} from '@/components/Icons';
 
 export default function HomePage() {
   const now = new Date();
@@ -28,24 +32,26 @@ export default function HomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className="hero">
+
+      <section className="hero home-hero">
         <ContourBackdrop />
         <div className="container hero-inner">
-          <div>
+          <div className="home-hero-copy">
             <span className="season-pill reveal reveal-1"><span className="dot" /> {seasonLabels[season]} · {zone.name}</span>
             <h1 className="reveal reveal-2">Hari ini <em>di lahan</em></h1>
             <p className="lead reveal reveal-3">{seasonMessage(season)} Lihat apa yang sebaiknya Anda kerjakan sekarang, lalu hitung kebutuhannya dengan alat yang jelas asumsinya.</p>
             <div className="hero-actions reveal reveal-4">
-              <Link className="btn btn-primary" href="/app">Lihat yang cocok ditanam sekarang <IconArrow style={{ width: 18, height: 18 }} /></Link>
-              <Link className="btn btn-secondary" href="/panduan">Baca panduan</Link>
+              <Link className="btn btn-primary home-hero-primary" href="/app">Lihat yang cocok ditanam sekarang <IconArrow /></Link>
+              <Link className="btn btn-secondary home-hero-secondary" href="/panduan">Baca panduan</Link>
             </div>
             <div className="trust-row reveal reveal-5">
               <span><IconSeal /> Ditulis & diperiksa</span>
               <span><IconCalculator /> Asumsi ditampilkan</span>
               <span><IconLeaf /> Tanpa janji panen</span>
             </div>
-            <p className="muted small reveal reveal-5" style={{ marginTop: 10 }}>{formatDate(now)} · Panduan pertanian berbahasa Indonesia</p>
+            <p className="home-trust-note reveal reveal-5">{formatDate(now)} · Panduan pertanian berbahasa Indonesia</p>
           </div>
+
           <aside className="hero-card reveal reveal-3" aria-label="Ringkasan kegiatan bulan ini">
             <span className="eyebrow">Sedang waktunya</span>
             <h3>Cabai · {zone.name}</h3>
@@ -59,103 +65,117 @@ export default function HomePage() {
             )) : (
               <p className="muted small">Belum ada jendela aktif untuk komoditas ini di wilayah pilihan. Coba komoditas lain di Kalender Tanam.</p>
             )}
-            <Link className="text-link" style={{ display: 'inline-block', marginTop: 16 }} href="/app/kalender?komoditas=cabai&wilayah=jawa-rendah">
-              Buka Kalender Tanam <IconArrow style={{ width: 14, height: 14, display: 'inline' }} />
+            <Link className="text-link home-hero-card-link" href="/app/kalender?komoditas=cabai&wilayah=jawa-rendah">
+              Buka Kalender Tanam <IconArrow />
             </Link>
           </aside>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section home-section">
         <div className="container">
           <div className="section-head">
             <div><span className="eyebrow">Empat pilar</span><h2>Dari pertanyaan menjadi keputusan</h2></div>
-            <p className="muted small" style={{ maxWidth: '38ch' }}>Setiap bagian menjawab satu pertanyaan yang sering muncul sebelum Anda bertindak di lahan.</p>
+            <p className="muted small home-section-intro">Setiap bagian menjawab satu pertanyaan yang sering muncul sebelum Anda bertindak di lahan.</p>
           </div>
           <div className="grid-3">
-            <Link href="/app" className="card card-hover">
-              <span className="card-kicker">01 · Hari ini</span><h3>Apa yang dikerjakan sekarang?</h3>
+            <Link href="/app" className="card card-hover home-pillar">
+              <span className="home-pillar-icon"><IconHome /></span>
+              <span className="card-kicker">01 · Hari ini</span>
+              <h3>Apa yang dikerjakan sekarang?</h3>
               <p>Beranda kontekstual mengikuti bulan, musim, dan wilayah pilihan Anda.</p>
-              <div className="card-footer">Buka beranda <IconArrow style={{ width: 16, height: 16 }} /></div>
+              <span className="card-footer">Buka beranda <IconArrow /></span>
             </Link>
-            <Link href="/app/kalender" className="card card-hover">
-              <span className="card-kicker">02 · Kalender</span><h3>Kapan waktu tanamnya?</h3>
+            <Link href="/app/kalender" className="card card-hover home-pillar">
+              <span className="home-pillar-icon"><IconCalendar /></span>
+              <span className="card-kicker">02 · Kalender</span>
+              <h3>Kapan waktu tanamnya?</h3>
               <p>Garis waktu 12 bulan untuk semai, tanam, pupuk, dan panen.</p>
-              <div className="card-footer"><IconCalendar style={{ width: 16, height: 16 }} /> Lihat kalender</div>
+              <span className="card-footer"><IconCalendar /> Lihat kalender</span>
             </Link>
-            <Link href="/app/alat" className="card card-hover">
-              <span className="card-kicker">03 · Hitung</span><h3>Berapa kebutuhannya?</h3>
+            <Link href="/app/alat" className="card card-hover home-pillar">
+              <span className="home-pillar-icon"><IconCalculator /></span>
+              <span className="card-kicker">03 · Hitung</span>
+              <h3>Berapa kebutuhannya?</h3>
               <p>Dosis pupuk, populasi tanam, dan analisis usaha dengan angka langsung.</p>
-              <div className="card-footer"><IconCalculator style={{ width: 16, height: 16 }} /> Buka alat hitung</div>
+              <span className="card-footer"><IconCalculator /> Buka alat hitung</span>
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--surface)', borderBlock: '1px solid var(--line)' }}>
+      <section className="section home-section home-section--tint">
         <div className="container">
           <div className="section-head">
             <div><span className="eyebrow">Alat cepat</span><h2>Hitung sebelum Anda membeli</h2></div>
-            <Link className="text-link" href="/app/alat">Semua alat <IconExternal style={{ width: 14, height: 14, display: 'inline' }} /></Link>
+            <Link className="btn btn-secondary btn-small" href="/app/alat">Semua alat <IconExternal /></Link>
           </div>
           <div className="grid-3">
             {tools.map((tool, index) => (
-              <Link key={tool.slug} href={`/app/alat/${tool.slug}`} className="card card-hover">
-                <span className="card-kicker">Alat 0{index + 1}</span><h3>{tool.name}</h3><p>{tool.summary}</p>
-                <div className="card-footer">Mulai menghitung <IconArrow style={{ width: 16, height: 16 }} /></div>
+              <Link key={tool.slug} href={`/app/alat/${tool.slug}`} className="card card-hover home-tool">
+                <span className="card-kicker">Alat 0{index + 1}</span>
+                <h3>{tool.name}</h3>
+                <p>{tool.summary}</p>
+                <span className="card-footer">Mulai menghitung <IconArrow /></span>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section home-section">
         <div className="container">
           <div className="section-head">
             <div><span className="eyebrow">Panduan terbaru</span><h2>Ilmu yang bisa dipegang</h2></div>
-            <Link className="text-link" href="/panduan">Lihat semua panduan <IconArrow style={{ width: 14, height: 14, display: 'inline' }} /></Link>
           </div>
           <div className="grid-3">
             {latest.slice(0, 3).map((guide) => (
-              <Link key={guide.id} href={`/panduan/${guide.slug}`} className="card card-hover">
+              <Link key={guide.id} href={`/panduan/${guide.slug}`} className="card card-hover home-guide" aria-label={`Baca ${guide.title}`}>
                 <span className="tag">{guide.category.replace('-', ' ')}</span>
-                <h3>{guide.title}</h3><p>{guide.summary}</p>
-                <div className="card-footer">
+                <h3>{guide.title}</h3>
+                <p>{guide.summary}</p>
+                <span className="card-footer home-guide-footer">
                   <span>{formatDate(guide.updatedAt)}</span>
                   {guide.fieldVerified && <VerifiedSeal when={guide.verifiedAt} />}
-                </div>
+                  <IconArrow className="home-read-arrow" />
+                  <span className="sr-only">Baca</span>
+                </span>
               </Link>
             ))}
+          </div>
+          <div className="home-section-action">
+            <Link className="btn btn-secondary" href="/panduan">Lihat semua panduan <IconArrow /></Link>
           </div>
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--surface)', borderBlock: '1px solid var(--line)' }}>
+      <section className="section home-section home-section--tint">
         <div className="container">
           <div className="section-head">
             <div><span className="eyebrow">Komoditas</span><h2>Mulai dari tanaman Anda</h2></div>
-            <Link className="text-link" href="/komoditas">Semua komoditas <IconArrow style={{ width: 14, height: 14, display: 'inline' }} /></Link>
+            <Link className="btn btn-secondary btn-small" href="/komoditas">Semua komoditas <IconArrow /></Link>
           </div>
           <div className="grid-3">
             {commodities.slice(0, 6).map((crop) => (
-              <Link key={crop.id} href={`/komoditas/${crop.slug}`} className="card card-hover" style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-                <span className="commodity-swatch" style={{ background: crop.accent }}>{crop.name.charAt(0)}</span>
-                <div><h3 style={{ fontSize: 18, marginTop: 2 }}>{crop.name}</h3><p className="small">{crop.summary}</p></div>
+              <Link key={crop.id} href={`/komoditas/${crop.slug}`} className="card card-hover home-crop">
+                <CropIcon slug={crop.slug} />
+                <h3>{crop.name}</h3>
+                <p>{crop.summary}</p>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section home-section">
         <div className="container">
-          <div className="card" style={{ padding: 48, display: 'flex', flexWrap: 'wrap', gap: 24, alignItems: 'center', justifyContent: 'space-between', background: 'var(--primary-container)' }}>
-            <div>
+          <div className="card home-diagnose">
+            <div className="home-diagnose-copy">
               <span className="eyebrow">Diagnosa gejala</span>
-              <h2 style={{ fontSize: 34, marginTop: 8 }}>Tanaman bermasalah?</h2>
-              <p className="muted" style={{ marginTop: 8, maxWidth: '52ch' }}>Jawab beberapa pertanyaan singkat untuk melihat kemungkinan penyebabnya. Hasilnya kemungkinan, bukan kepastian.</p>
+              <h2>Tanaman bermasalah?</h2>
+              <p className="muted">Jawab beberapa pertanyaan singkat untuk melihat kemungkinan penyebabnya. <span className="home-diagnose-note">Hasilnya kemungkinan, bukan kepastian.</span></p>
             </div>
-            <Link className="btn btn-primary" href="/app/diagnosa"><IconDiagnose style={{ width: 18, height: 18 }} /> Mulai diagnosa</Link>
+            <Link className="btn btn-primary" href="/app/diagnosa"><IconDiagnose /> Mulai diagnosa</Link>
           </div>
         </div>
       </section>

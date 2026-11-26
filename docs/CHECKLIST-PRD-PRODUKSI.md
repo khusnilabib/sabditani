@@ -5,7 +5,7 @@ Sumber PRD: `docs/PRD-v3-original.md` (kanonik). Status diperiksa pada **26 Nove
 
 | Info | Nilai |
 |---|---|
-| Commit produksi web | `baad51c` (`main`) · checklist `90eae1a` |
+| Commit produksi web | `2214d1e` (`main`) · checklist `4692a40` |
 | Web live | https://sabditani.pages.dev |
 | Repo | https://github.com/khusnilabib/sabditani |
 | Supabase | Proyek `sabditani-mvp`, ref `uzjskaeqenfwsyoxceqx`; migrasi + seed diterapkan |
@@ -28,7 +28,7 @@ Sumber PRD: `docs/PRD-v3-original.md` (kanonik). Status diperiksa pada **26 Nove
 | Admin mobile | ◐ | CRUD Supabase + RLS, unggah 2 ukuran, konflik versi, demo dimatikan; pengelolaan kalender/gejala/parameter masih lokal |
 | Supabase & RLS | ✅ | Admin pertama dibuat, signup mati, uji anon/viewer/editor/admin lulus |
 | Worker/R2/publish E2E | ✅ | Worker live, R2 + CORS aktif, `/v1/publish` memicu deploy produksi |
-| Responsivitas & kualitas | ✅ | Navigasi mobile/f sidebar terpisah, axe 0 pelanggaran di 45 rute, sentuh 48 px, zoom 200%, Lighthouse 90–100 |
+| Responsivitas & kualitas | ✅ | Beranda diperhalus di 360/768/1280 px; navigasi mobile/sidebar terpisah; axe 0 pelanggaran; sentuh ≥44 px; Lighthouse 88–100 |
 | Kesiapan peluncuran PRD §23 | ◐ | Sisa: foto lapangan asli, domain media khusus, backup/monitoring, APK, uji perangkat |
 
 ---
@@ -226,10 +226,10 @@ Sumber PRD: `docs/PRD-v3-original.md` (kanonik). Status diperiksa pada **26 Nove
 | Viewport 390 px & 195 px (zoom 200%) | ✅ tanpa overflow horizontal; target sentuh minimum 48 px |
 | Live `sabditani.pages.dev` | ✅ `/`, `/panduan/`, detail panduan, font, gambar, `/data/manifest.json` → 200 |
 | Snapshot data | 6 komoditas · 130 kalender · 5 wilayah · 6 hama · 8 gejala · **15 panduan** · 30 indeks cari |
-| Git | web `baad51c`, checklist `90eae1a`, working tree bersih |
+| Git | web `2214d1e`, checklist `4692a40`, working tree bersih |
 
 ---
 
-**Kesimpulan:** seluruh **P0 selesai dan terverifikasi di produksi**, termasuk penyempurnaan navigasi mobile, sidebar aplikasi yang terpisah dari menu situs, serta identitas brand yang konsisten dengan tagline **sarana abdi tani**. Sisa ketidaksesuaian dengan definisi "produksi penuh" PRD kini hanya pada hal yang tidak bisa dibereskan tanpa aset/akses tambahan: **foto lapangan asli**, **domain media khusus**, **backup/monitoring**, **APK rilis**, dan **uji perangkat nyata**—semuanya masuk P1.
+**Kesimpulan:** seluruh **P0 selesai dan terverifikasi di produksi**, termasuk penyempurnaan navigasi mobile, sidebar aplikasi yang terpisah dari menu situs, identitas brand yang konsisten dengan tagline **sarana abdi tani**, serta hierarki dan ritme visual beranda yang lebih tenang dan mudah dipandu. Sisa ketidaksesuaian dengan definisi "produksi penuh" PRD kini hanya pada hal yang tidak bisa dibereskan tanpa aset/akses tambahan: **foto lapangan asli**, **domain media khusus**, **backup/monitoring**, **APK rilis**, dan **uji perangkat nyata**—semuanya masuk P1.
 
 Diperbarui: 26 November 2026 · Pemilik: tim SABDITANI · Status dokumen: **aktif**.
