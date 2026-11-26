@@ -55,6 +55,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
 
   return (
     <>
+      {guide.coverUrl && <link rel="preload" as="image" href={guide.coverUrl} fetchPriority="high" />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="page-head">
         <div className="container-narrow">
