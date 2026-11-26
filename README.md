@@ -71,7 +71,7 @@ Salin `.env.example` dan isi nilai yang diperlukan. Tanpa kredensial:
 - Admin berjalan dalam **mode demo lokal** (semua data tersimpan di perangkat).
 - Worker dapat dijalankan, tetapi rute `/v1/*` memerlukan Supabase dan secrets.
 
-Lihat `docs/ARCHITECTURE.md` untuk detail alur produksi dan opsi deploy.
+Web di-build sebagai **static export** (`apps/web/out`) dan di-deploy ke **Cloudflare Pages** pada `https://sabditani.pages.dev`. Karena itu, pembaruan konten tampil setelah build ulang. Lihat `docs/ARCHITECTURE.md` untuk detailnya.
 
 ---
 

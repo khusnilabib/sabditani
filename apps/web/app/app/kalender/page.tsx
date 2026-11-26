@@ -1,8 +1,12 @@
-import { CalendarClient } from '../components/CalendarClient';
+import { Suspense } from 'react';
+import { CalendarPageClient } from '../components/CalendarPageClient';
 
 export const metadata = { title: 'Kalender Tanam' };
 
-export default async function CalendarPage({ searchParams }: { searchParams: Promise<{ komoditas?: string; wilayah?: string }> }) {
-  const params = await searchParams;
-  return <CalendarClient initialCrop={params.komoditas} initialZone={params.wilayah} />;
+export default function CalendarPage() {
+  return (
+    <Suspense fallback={<p className="muted">Memuat kalender…</p>}>
+      <CalendarPageClient />
+    </Suspense>
+  );
 }

@@ -6,11 +6,11 @@ Versi 0.1 — November 2026. Menggantikan arsitektur Flutter pada PRD v3.0 denga
 
 ```
                     ┌─────────────────────────────────────────────┐
-   Pengunjung ─────►│ Next.js 16 (Vercel / Node hosting)         │
+   Pengunjung ─────►│ Next.js 16 static export (Cloudflare Pages)│
                     │ • situs SEO (SSR/SSG)                      │
                     │ • /app interaktif (client components)      │
                     │ • /data/*.json (snapshot)                  │
-                    │ • /api/revalidate (ISR webhook)            │
+                    │ • /data/*.json + rss.xml statis            │
                     └──────────────────┬──────────────────────────┘
                                        │ GitHub Actions / Vercel deploy
  ┌────────────────┐                    │
@@ -48,7 +48,7 @@ Versi 0.1 — November 2026. Menggantikan arsitektur Flutter pada PRD v3.0 denga
 | API tipis | Cloudflare Worker TypeScript | Verifikasi JWT, upload R2, publish dispatch |
 | Media | Cloudflare R2 + `media.sabdani.id` | Sesuai PRD, CORS untuk gambar web |
 | Build | GitHub Actions, npm workspaces | Satu lockfile untuk semua klien |
-| Deploy web | Vercel (native Next.js). Alternatif: OpenNext → Cloudflare Pages | Next.js tidak menghasilkan `dist/` statis murni bila memakai ISR/route handler |
+| Deploy web | **Cloudflare Pages** dari `apps/web/out` (Next.js `output: export`) | Seluruh konten statis; cocok dengan target `sabditani.pages.dev` |
 
 ## 3. Alur data publik
 
@@ -61,10 +61,11 @@ Perubahan konten dari admin memicu:
 
 1. `POST /v1/publish` ke Worker dengan JWT staf.
 2. Worker verifikasi peran, mengirim `repository_dispatch` ke GitHub, mencatat baris `deployments`.
-3. GitHub Actions membangun ulang web lalu memanggil `WEB_REVALIDATE_URL`.
-4. Endpoint Next.js `/api/revalidate` menjalankan `revalidatePath` untuk rute yang berubah.
-5. Admin menampilkan status build (Realtime Supabase atau polling `/v1/deployments/latest`).
+3. GitHub Actions menjalankan `npm run data && npm run build:web`, lalu `wrangler pages deploy out` ke `sabditani.pages.dev`.
+4. Admin menampilkan status build (Realtime Supabase atau polling `/v1/deployments/latest`).
 
+> Karena web memakai static export, perubahan konten tampil setelah build ulang (±2–4 menit), sesuai prinsip D4 di PRD.
+>
 > Mode demo tanpa backend: `publishDraft` mensimulasikan antrean dan status build sehingga alur UI tetap bisa dicoba.
 
 ## 4. Design system bersama
@@ -87,7 +88,7 @@ Komponen React web memakai class CSS dengan token; komponen RN memakai `StyleShe
 | Riverpod + freezed + go_router | React hooks/context, TypeScript types, App Router |
 | drift/SQLite di admin | AsyncStorage + SecureStore (MVP) |
 | `shared_preferences` web | `localStorage` lewat hook `useLocalStorage` |
-| Cloudflare Pages untuk semua | Vercel untuk Next.js; Worker + R2 tetap di Cloudflare |
+| Cloudflare Pages untuk semua | Cloudflare Pages tetap dipakai untuk web (static export); Worker + R2 juga di Cloudflare |
 | Widgetbook + golden test | Katalog komponen CSS + unit test logika (belum golden test) |
 | APK Flutter | EAS Build Expo untuk APK internal |
 
@@ -100,13 +101,13 @@ Alasan lengkap ada di `docs/ADR-001-nextjs-react-native.md`.
 - RLS aktif di semua tabel (lihat migrasi).
 - Worker memeriksa magic bytes dan batas 2 MB pada unggahan.
 - Markdown web dirender sebagai elemen React; tidak menyisipkan HTML mentah.
-- Header `nosniff`, `Referrer-Policy`, dan `Permissions-Policy` ditambahkan di `next.config.ts`.
+- Header `nosniff`, `Referrer-Policy`, `Permissions-Policy`, dan HSTS ditambahkan lewat `apps/web/public/_headers`.
 
 ## 7. Opsi deploy
 
-**Direkomendasikan:** Vercel untuk web (native Next.js), Cloudflare Worker untuk API, R2 untuk media, GitHub Actions untuk CI.
+**Digunakan:** Cloudflare Pages untuk web (static export Next.js), Cloudflare Worker untuk API, R2 untuk media, GitHub Actions untuk CI/CD.
 
-**Alternatif Cloudflare penuh:** gunakan `@opennextjs/cloudflare` untuk mengubah build Next.js menjadi Worker/Pages. Perlu uji ISR, `revalidatePath`, dan ukuran bundle sebelum produksi.
+**Alternatif bila membutuhkan ISR/route handler:** gunakan Vercel atau `@opennextjs/cloudflare`. Itu memerlukan pengujian tambahan dan tidak dipakai pada MVP ini.
 
 ## 8. Pengujian
 

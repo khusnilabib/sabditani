@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>SABDITANI — Panduan</title>
+    <link>https://sabditani.pages.dev</link>
+    <description>Panduan pertanian berbahasa Indonesia: kalender tanam, alat hitung, diagnosa gejala, dan panduan terverifikasi lapangan.</description>
+    <language>id</language>
+    <lastBuildDate>Thu, 26 Nov 2026 06:56:11 GMT</lastBuildDate>
+    <item>
+      <title>Mengenali dan Mengendalikan Kutu Keputih</title>
+      <link>https://sabditani.pages.dev/panduan/mengenali-kutu-keputih</link>
+      <guid isPermaLink="true">https://sabditani.pages.dev/panduan/mengenali-kutu-keputih</guid>
+      <description>Ciri serangan, ambang pengendalian, dan urutan tindakan yang aman.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Sari Rahmawati</dc:creator>
+    </item>
+    <item>
+      <title>Pemupukan Cabai: Dosis dan Waktu yang Aman</title>
+      <link>https://sabditani.pages.dev/panduan/pemupukan-cabai</link>
+      <guid isPermaLink="true">https://sabditani.pages.dev/panduan/pemupukan-cabai</guid>
+      <description>Cara menentukan kebutuhan NPK untuk cabai, kapan diberikan, dan kesalahan yang sering terjadi.</description>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Andi Wijaya</dc:creator>
+    </item>
+    <item>
+      <title>Panen Cabai: Ciri Matang dan Penanganan Pasca Panen</title>
+      <link>https://sabditani.pages.dev/panduan/panen-cabai</link>
+      <guid isPermaLink="true">https://sabditani.pages.dev/panduan/panen-cabai</guid>
+      <description>Kapan memetik cabai, cara menjaga kualitas, dan kesalahan penyimpanan.</description>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Sari Rahmawati</dc:creator>
+    </item>
+    <item>
+      <title>Pengaturan Air Padi Sawah dari Tanam sampai Panen</title>
+      <link>https://sabditani.pages.dev/panduan/pengairan-padi</link>
+      <guid isPermaLink="true">https://sabditani.pages.dev/panduan/pengairan-padi</guid>
+      <description>Kedalaman air yang disarankan pada setiap fase pertumbuhan padi.</description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Sari Rahmawati</dc:creator>
+    </item>
+    <item>
+      <title>Menghitung Populasi Tanam dan Kebutuhan Benih</title>
+      <link>https://sabditani.pages.dev/panduan/menghitung-populasi-tanam</link>
+      <guid isPermaLink="true">https://sabditani.pages.dev/panduan/menghitung-populasi-tanam</guid>
+      <description>Rumus sederhana untuk menentukan jumlah tanaman dan benih berdasarkan jarak tanam.</description>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Andi Wijaya</dc:creator>
+    </item>
+    <item>
+      <title>Menyusun RAB Usaha Tani yang Realistis</title>
+      <link>https://sabditani.pages.dev/panduan/menyusun-rab-usaha-tani</link>
+      <guid isPermaLink="true">https://sabditani.pages.dev/panduan/menyusun-rab-usaha-tani</guid>
+      <description>Memisahkan biaya tetap dan variabel, lalu menghitung R/C, BEP harga, dan BEP produksi.</description>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Sari Rahmawati</dc:creator>
+    </item>
+    <item>
+      <title>Menyiapkan Lahan Cabai agar Tidak Genangan</title>
+      <link>https://sabditani.pages.dev/panduan/persiapan-lahan-cabai</link>
+      <guid isPermaLink="true">https://sabditani.pages.dev/panduan/persiapan-lahan-cabai</guid>
+      <description>Langkah mengolah lahan, membuat bedengan, dan mengatur drainase sebelum tanam cabai.</description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Andi Wijaya</dc:creator>
+    </item>
+    <item>
+      <title>Budidaya Jagung Manis: Jarak Tanam dan Waktu Panen</title>
+      <link>https://sabditani.pages.dev/panduan/budidaya-jagung-manis</link>
+      <guid isPermaLink="true">https://sabditani.pages.dev/panduan/budidaya-jagung-manis</guid>
+      <description>Pengaturan jarak tanam, pemupukan, dan ciri tongkol siap panen.</description>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Andi Wijaya</dc:creator>
+    </item>
+    <item>
+      <title>Membuat Kompos Matang untuk Kebun Rumahan</title>
+      <link>https://sabditani.pages.dev/panduan/kompos-matang</link>
+      <guid isPermaLink="true">https://sabditani.pages.dev/panduan/kompos-matang</guid>
+      <description>Ciri kompos siap pakai dan cara menghindari bau serta hama.</description>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Andi Wijaya</dc:creator>
+    </item>
+  </channel>
+</rss>

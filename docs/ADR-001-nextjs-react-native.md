@@ -15,7 +15,7 @@ PRD v3 merancang tiga klien Flutter: situs statis Jaspr, Flutter Web `/app`, dan
 3. Model data, rumus, dan teks UI ditulis sekali di paket TypeScript `@sabditani/core` dan dipakai kedua klien.
 4. Token desain tetap satu sumber (`tokens.json`), di-generate ke CSS, TypeScript, dan objek tema React Native.
 5. Supabase, Cloudflare Worker, dan R2 tetap dipertahankan sesuai PRD.
-6. Web tidak memanggil Supabase saat runtime; snapshot JSON tetap dipakai.
+6. Web tidak memanggil Supabase saat runtime; snapshot JSON tetap dipakai dan web di-export sebagai situs statis ke Cloudflare Pages.
 
 ## Alasan
 
@@ -27,8 +27,8 @@ PRD v3 merancang tiga klien Flutter: situs statis Jaspr, Flutter Web `/app`, dan
 
 ## Konsekuensi
 
-- Perlu menyesuaikan pipeline deploy: Vercel (atau OpenNext) untuk Next.js, bukan Pages statis murni.
-- `revalidatePath` menggantikan "build ulang penuh" untuk sebagian pembaruan konten.
+- Web memakai `output: export`; route handler diganti file statis (`rss.xml`) dan halaman query-string memakai `useSearchParams` dalam `Suspense`.
+- Pembaruan konten memicu build ulang penuh via GitHub Actions, lalu deploy ke Cloudflare Pages.
 - Admin memakai AsyncStorage pada MVP; bila concurrency tinggi diperlukan, migrasi ke SQLite dengan Drizzle disiapkan.
 - Komponen design system tidak bisa dibagi langsung sebagai kode (CSS vs StyleSheet); yang dibagi adalah token, teks UI, dan logika.
 

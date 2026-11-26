@@ -18,7 +18,7 @@ Dokumen ini memetakan bagian PRD v3.0 ke implementasi baru agar tidak ada cakupa
 | supabase_flutter | `@supabase/supabase-js` | Hanya di admin |
 | Cloudflare Worker | `services/api/src/index.ts` | Endpoint sama seperti PRD |
 | R2 | Binding `MEDIA` di `wrangler.toml` | Magic bytes + 2 MB |
-| GitHub Actions content-deploy | `web-deploy.yml` + `/api/revalidate` | ISR, bukan build statis penuh |
+| GitHub Actions content-deploy | `web-deploy.yml` → Cloudflare Pages | Build ulang statis dari `apps/web/out` |
 | Widgetbook | Tidak ada di MVP | Katalog token dan komponen dibahas di fase desain lanjut |
 | Golden test | Tidak ada di MVP | Unit test logika tersedia |
 | Flutter Web splash/WASM | Tidak relevan | Next.js streaming + font lokal |

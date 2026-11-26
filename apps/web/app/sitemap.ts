@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next';
 import { commodities, guides, pests, site } from '@sabditani/core';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ['', '/panduan', '/komoditas', '/hama', '/tentang', '/metodologi', '/kontak', '/privasi', '/app', '/app/kalender', '/app/alat', '/app/alat/pupuk', '/app/alat/populasi', '/app/alat/usaha', '/app/diagnosa', '/app/cari', '/app/tersimpan', '/app/pengaturan'];
   const now = new Date();

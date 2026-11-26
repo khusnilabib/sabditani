@@ -1,8 +1,12 @@
-import { FertilizerTool } from '../../components/FertilizerTool';
+import { Suspense } from 'react';
+import { FertilizerPageClient } from '../../components/FertilizerPageClient';
 
 export const metadata = { title: 'Hitung Pupuk' };
 
-export default async function FertilizerPage({ searchParams }: { searchParams: Promise<{ komoditas?: string }> }) {
-  const params = await searchParams;
-  return <FertilizerTool initialCrop={params.komoditas ?? 'cabai'} />;
+export default function FertilizerPage() {
+  return (
+    <Suspense fallback={<p className="muted">Memuat alat hitung…</p>}>
+      <FertilizerPageClient />
+    </Suspense>
+  );
 }

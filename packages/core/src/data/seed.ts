@@ -413,7 +413,7 @@ export const searchIndex: SearchItem[] = [
 export const site = {
   name: 'SABDITANI',
   tagline: 'sarana abdi tani',
-  domain: 'https://sabditani.id',
+  domain: 'https://sabditani.pages.dev',
   description: 'Panduan pertanian berbahasa Indonesia: kalender tanam, alat hitung, diagnosa gejala, dan panduan terverifikasi lapangan.',
   whatsapp: 'https://wa.me/6281234567890',
   email: 'halo@sabditani.id',
