@@ -1,0 +1,111 @@
+[
+  {
+    "id": "kutu-keputih",
+    "slug": "kutu-keputih",
+    "name": "Kutu Keputih (Whitefly)",
+    "kind": "hama",
+    "summary": "Serangga kecil bersayap putih yang mengisap cairan daun dan menularkan virus.",
+    "cause": "Populasi meningkat pada kanopi lembap dan hangat. Serial tanam tanpa jeda memudahkan perpindahan.",
+    "controlMd": "## Pengendalian bertingkat\n\n1. **Budidaya:** gunakan mulsa perak, bersihkan gulma inang, dan jaga jarak tanam.\n2. **Hayati:** pasang perangkap kuning lengket dan lepaskan predator alami bila tersedia.\n3. **Kimia:** gunakan insektisida terdaftar hanya bila ambang batas terlampaui. Baca label dan gunakan APD.\n\n:::peringatan\nGunakan sarung tangan dan masker saat menyemprot. Jangan menyemprot saat tanaman berbunga dan serangga penyerbuk aktif.\n:::",
+    "commodityIds": [
+      "cabai",
+      "tomat"
+    ],
+    "symptomIds": [
+      "daun-menggulung",
+      "daun-kuning",
+      "bintik-putih"
+    ]
+  },
+  {
+    "id": "hawar-daun",
+    "slug": "hawar-daun",
+    "name": "Hawar Daun (Jamur)",
+    "kind": "penyakit",
+    "summary": "Penyakit jamur yang menimbulkan bercak cokelat dan dapat merusak daun dalam waktu singkat.",
+    "cause": "Kelembapan tinggi, daun basa terlalu lama, dan sirkulasi udara buruk.",
+    "controlMd": "## Pengendalian bertingkat\n\n1. **Budidaya:** tingkatkan drainase, pangkas daun bawah, dan sirap pada pagi hari.\n2. **Hayati:** gunakan jamur antagonis yang terdaftar bila tersedia.\n3. **Kimia:** fungisida terdaftar dengan rotasi golongan aktif untuk mencegah resistensi.\n\n:::catatan\nBuang daun sakit ke luar lahan. Jangan mengomposkan material yang masih aktif terinfeksi.\n:::",
+    "commodityIds": [
+      "cabai",
+      "tomat",
+      "jagung"
+    ],
+    "symptomIds": [
+      "bercak-cokelat",
+      "daun-kuning",
+      "buah-bercak-hitam"
+    ]
+  },
+  {
+    "id": "layu-bakteri",
+    "slug": "layu-bakteri",
+    "name": "Layu Bakteri",
+    "kind": "penyakit",
+    "summary": "Penyakit yang menyebabkan layu mendadak karena pembuluh air tersumbat.",
+    "cause": "Bakteri tanah menginfeksi akar melalui luka, favorit pada tanah lembap dan suhu tinggi.",
+    "controlMd": "## Pengendalian bertingkat\n\n1. **Budidaya:** gunakan bibit sehat, rotasi tanaman 2–3 musim, dan perbaiki drainase.\n2. **Hayati:** aplikasikan mikroba antagonis yang terdaftar ke media tanam.\n3. **Kimia:** tidak ada obat yang menyembuhkan tanaman terinfeksi; fokus pada pencegahan.\n\n:::peringatan\nCabut dan musnahkan tanaman terinfeksi agar tidak menular ke tanaman sehat.\n:::",
+    "commodityIds": [
+      "cabai",
+      "tomat"
+    ],
+    "symptomIds": [
+      "layu-mendadak",
+      "daun-kuning"
+    ]
+  },
+  {
+    "id": "busuk-akar",
+    "slug": "busuk-akar",
+    "name": "Busuk Akar",
+    "kind": "penyakit",
+    "summary": "Akar membusuk karena tanah terlalu basa dan kurang oksigen.",
+    "cause": "Drainase buruk, penyiraman berlebihan, dan media tanam padat.",
+    "controlMd": "## Pengendalian bertingkat\n\n1. **Budidaya:** perbaiki bedengan, tambahkan bahan organik matang, dan kurangi frekuensi siraman.\n2. **Hayati:** gunakan trichoderma yang terdaftar sesuai dosis.\n3. **Kimia:** hindari fungisida tanpa diagnosis yang jelas.\n\n:::catatan\nPeriksa akar satu tanaman contoh sebelum mengambil tindakan.\n:::",
+    "commodityIds": [
+      "cabai",
+      "tomat",
+      "bawang-merah"
+    ],
+    "symptomIds": [
+      "akar-busuk",
+      "layu-mendadak",
+      "daun-kuning"
+    ]
+  },
+  {
+    "id": "kekurangan-nitrogen",
+    "slug": "kekurangan-nitrogen",
+    "name": "Kekurangan Nitrogen",
+    "kind": "kekurangan_hara",
+    "summary": "Daun tua menguning merata karena pasokan nitrogen tidak mencukupi.",
+    "cause": "Dosis nitrogen rendah, pencucian hara akibat hujan, atau media tanam miskin.",
+    "controlMd": "## Pengendalian bertingkat\n\n1. **Budidaya:** tambahkan kompos matang dan kurangi pencucian hara.\n2. **Hayati:** gunakan pupuk hijau atau leguminosa pada rotasi tanaman.\n3. **Kimia:** aplikasikan urea sesuai dosis hasil hitung, bukan sekadar perkiraan.\n\n[[hitung:pupuk]]\n\n:::peringatan\nKelebihan nitrogen dapat menekan pembungaan dan meningkatkan serangan hama. Sesuaikan dengan fase tanaman.\n:::",
+    "commodityIds": [
+      "cabai",
+      "padi",
+      "jagung"
+    ],
+    "symptomIds": [
+      "daun-kuning"
+    ]
+  },
+  {
+    "id": "thrips",
+    "slug": "thrips",
+    "name": "Thrips",
+    "kind": "hama",
+    "summary": "Serangga kecil ramping yang merusak bunga dan mencatat goresan perak pada daun.",
+    "cause": "Populasi melonjak pada musim kering dan bunga yang banyak.",
+    "controlMd": "## Pengendalian bertingkat\n\n1. **Budidaya:** gunakan mulsa reflektif dan perangkap biru lengket.\n2. **Hayati:** predator alami seperti phytoseiid bila tersedia.\n3. **Kimia:** insektisida terdaftar dengan rotasi golongan aktif.\n\n:::peringatan\nSemprot pada pagi atau sore, hindari fase bunga terbuka agar penyerbuk tidak terdampak.\n:::",
+    "commodityIds": [
+      "cabai",
+      "tomat",
+      "bawang-merah"
+    ],
+    "symptomIds": [
+      "bintik-putih",
+      "bunga-rontok",
+      "bercak-cokelat"
+    ]
+  }
+]

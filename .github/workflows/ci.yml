@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main, dev]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.19.4
+          cache: npm
+      - run: npm ci
+      - run: npm run tokens
+      - name: Cek token hasil generate tidak berubah
+        run: git diff --exit-code -- apps/web/styles/tokens.css packages/tokens/src/index.ts apps/admin/src/theme.ts
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build:web
+      - name: Validasi konfigurasi Expo
+        working-directory: apps/admin
+        run: npx expo config --type public --json > /dev/null

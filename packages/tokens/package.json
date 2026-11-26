@@ -1,0 +1,11 @@
+{
+  "name": "@sabditani/tokens",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sumber kebenaran token desain SABDITANI (CSS + TypeScript + React Native).",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "node scripts/generate.mjs",
+    "typecheck": "tsc --noEmit"
+  }
+}

@@ -1,0 +1,25 @@
+name: admin-android
+
+on:
+  push:
+    tags: ['admin-v*']
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.19.4
+          cache: npm
+      - run: npm ci && npm run tokens
+      - run: npm run typecheck -w @sabditani/admin
+      - name: Pasang EAS CLI
+        run: npm install -g eas-cli
+      - name: Bangun APK/AAB internal
+        working-directory: apps/admin
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+        run: eas build --platform android --profile internal --non-interactive

@@ -1,0 +1,30 @@
+{
+  "name": "sabditani-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SABDITANI — sarana abdi tani. Next.js + React Native monorepo.",
+  "workspaces": [
+    "apps/web",
+    "apps/admin",
+    "packages/*",
+    "services/api"
+  ],
+  "scripts": {
+    "tokens": "node packages/tokens/scripts/generate.mjs",
+    "dev:web": "npm run dev -w @sabditani/web",
+    "build:web": "npm run build -w @sabditani/web",
+    "start:web": "npm run start -w @sabditani/web",
+    "dev:admin": "npm run start -w @sabditani/admin",
+    "typecheck": "npm run typecheck -w @sabditani/core && npm run typecheck -w @sabditani/web && npm run typecheck -w @sabditani/admin && npm run typecheck -w @sabditani/api",
+    "test": "npm run test -w @sabditani/core",
+    "data": "npm run snapshots -w @sabditani/core",
+    "prepare": "npm run tokens"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

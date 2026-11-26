@@ -1,0 +1,188 @@
+[
+  {
+    "id": "g01",
+    "slug": "pemupukan-cabai",
+    "title": "Pemupukan Cabai: Dosis dan Waktu yang Aman",
+    "summary": "Cara menentukan kebutuhan NPK untuk cabai, kapan diberikan, dan kesalahan yang sering terjadi.",
+    "category": "pemupukan",
+    "commodityId": "cabai",
+    "author": "Andi Wijaya",
+    "authorRole": "Penulis pertanian",
+    "publishedAt": "2026-10-18",
+    "updatedAt": "2026-11-12",
+    "fieldVerified": true,
+    "verifiedAt": "November 2026",
+    "verifiedBy": "Andi Wijaya",
+    "readingMinutes": 7,
+    "tags": [
+      "cabai",
+      "npk",
+      "pupuk"
+    ],
+    "body": "Pemupukan cabai bukan sekadar menambah urea. Kebutuhan hara berubah sesuai fase pertumbuhan: vegetatif membutuhkan nitrogen, fase bunga dan buah membutuhkan lebih banyak fosfor dan kalium.\n\n## Ringkasan dosis\n\nUntuk lahan dengan analisis tanah menengah, dosis NPK 16-16-16 berkisar 300–400 kg per hektar, dibagi 3 aplikasi. Urea ditambahkan hanya bila tanaman menunjukkan gejala kekurangan nitrogen.\n\n[[hitung:pupuk]]\n\n## Jadwal aplikasi\n\n| Waktu | Kegiatan | Catatan |\n|---|---|---|\n| Saat tanam | NPK dasar | Campur dengan tanah, jangan menempel akar |\n| 21 hari setelah tanam | Urea + NPK | Siram setelah aplikasi |\n| 45 hari setelah tanam | NPK + kalium | Menjelang pembungaan |\n\n:::peringatan\nGunakan sarung tangan dan masker saat memupuk. Jangan mengaplikasikan pupuk saat daun basa atau menjelang hujan deras.\n:::\n\n:::catatan\nDosis di atas adalah panduan umum. Lakukan analisis tanah jika memungkinkan dan sesuaikan dengan kondisi lahan Anda.\n:::"
+  },
+  {
+    "id": "g02",
+    "slug": "persiapan-lahan-cabai",
+    "title": "Menyiapkan Lahan Cabai agar Tidak Genangan",
+    "summary": "Langkah mengolah lahan, membuat bedengan, dan mengatur drainase sebelum tanam cabai.",
+    "category": "budidaya",
+    "commodityId": "cabai",
+    "author": "Andi Wijaya",
+    "authorRole": "Penulis pertanian",
+    "publishedAt": "2026-09-29",
+    "updatedAt": "2026-10-20",
+    "fieldVerified": true,
+    "verifiedAt": "Oktober 2026",
+    "verifiedBy": "Andi Wijaya",
+    "tags": [
+      "cabai",
+      "lahan",
+      "drainase"
+    ],
+    "body": "Cabai tidak tahan genangan. Persiapan lahan yang baik dimulai 2–3 minggu sebelum tanam.\n\n## Langkah kerja\n\n1. Bersihkan gulma dan sisa tanaman sebelumnya.\n2. Olah tanah selebar bedengan 100–120 cm dengan tinggi 20–30 cm.\n3. Tambahkan kompos matang 10–15 ton per hektar.\n4. Buat parit drainase di sisi bedengan dengan lebar 30 cm.\n5. Pasang mulsa untuk menekan gulma dan menjaga kelembapan.\n\n:::catatan\nPada lahan berat (lempung), tinggikan bedengan dan perbanyak bahan organik.\n:::",
+    "readingMinutes": 5
+  },
+  {
+    "id": "g03",
+    "slug": "pengairan-padi",
+    "title": "Pengaturan Air Padi Sawah dari Tanam sampai Panen",
+    "summary": "Kedalaman air yang disarankan pada setiap fase pertumbuhan padi.",
+    "category": "budidaya",
+    "commodityId": "padi",
+    "author": "Sari Rahmawati",
+    "authorRole": "Penyuluh lapangan",
+    "publishedAt": "2026-10-02",
+    "updatedAt": "2026-11-05",
+    "fieldVerified": true,
+    "verifiedAt": "November 2026",
+    "verifiedBy": "Sari Rahmawati",
+    "tags": [
+      "padi",
+      "air",
+      "sawah"
+    ],
+    "body": "Air yang terlalu dalam menekan anakan, sedangkan kekeringan pada fase bunga menurunkan hasil secara tajam.\n\n## Kedalaman air\n\n| Fase | Kedalaman |\n|---|---|\n| 0–15 hari setelah tanam | 2–3 cm |\n| Vegetatif | 3–5 cm |\n| Pembentukan malai | 5–7 cm |\n| Mengising | Keringkan bertahap |\n| 10 hari sebelum panen | Keringkan penuh |\n\n:::peringatan\nJangan biarkan sawah kering pada fase bunga. Pastikan pematang tidak bocor.\n:::",
+    "readingMinutes": 5
+  },
+  {
+    "id": "g04",
+    "slug": "budidaya-jagung-manis",
+    "title": "Budidaya Jagung Manis: Jarak Tanam dan Waktu Panen",
+    "summary": "Pengaturan jarak tanam, pemupukan, dan ciri tongkol siap panen.",
+    "category": "budidaya",
+    "commodityId": "jagung",
+    "author": "Andi Wijaya",
+    "authorRole": "Penulis pertanian",
+    "publishedAt": "2026-09-12",
+    "updatedAt": "2026-10-15",
+    "fieldVerified": false,
+    "tags": [
+      "jagung",
+      "jarak tanam"
+    ],
+    "body": "Jagung manis panen lebih awal daripada jagung biasa, sehingga jadwal tanamnya perlu diperhitungkan dengan musim hujan.\n\n## Jarak tanam\n\nGunakan jarak 70 × 25 cm dengan dua benih per lubang, lalu sisakan satu tanaman sehat. Populasi akhir sekitar 110.000 tanaman per hektar.\n\n[[hitung:populasi]]\n\n## Ciri panen\n\nKelopak tongkol berwarna cokelat kering, rambut tongkol cokelat, dan biji keras bila ditekan. Panen pagi hari untuk menjaga kemanisan.",
+    "readingMinutes": 5
+  },
+  {
+    "id": "g05",
+    "slug": "mengenali-kutu-keputih",
+    "title": "Mengenali dan Mengendalikan Kutu Keputih",
+    "summary": "Ciri serangan, ambang pengendalian, dan urutan tindakan yang aman.",
+    "category": "hama-penyakit",
+    "commodityId": "cabai",
+    "author": "Sari Rahmawati",
+    "authorRole": "Penyuluh lapangan",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-11-18",
+    "fieldVerified": true,
+    "verifiedAt": "November 2026",
+    "verifiedBy": "Sari Rahmawati",
+    "tags": [
+      "hama",
+      "cabai",
+      "whitefly"
+    ],
+    "body": "Kutu keputih dikenali dari serangga putih kecil yang terbang saat daun digoyang. Serangan berat menyebabkan daun menggulung, kuning, dan pertumbuhan terhambat.\n\n## Cara memeriksa\n\nGoyang atau balik daun bagian bawah secara perlahan. Perhatikan bintik putih, kotoran hitam, dan semut yang sering mengikuti kutu.\n\n[[diagnosa]]\n\n:::peringatan\nPastikan dengan penyuluh atau petugas setempat sebelum menggunakan pestisida. Gunakan sarung tangan dan masker saat menyemprot.\n:::",
+    "readingMinutes": 5
+  },
+  {
+    "id": "g06",
+    "slug": "menghitung-populasi-tanam",
+    "title": "Menghitung Populasi Tanam dan Kebutuhan Benih",
+    "summary": "Rumus sederhana untuk menentukan jumlah tanaman dan benih berdasarkan jarak tanam.",
+    "category": "usaha-tani",
+    "author": "Andi Wijaya",
+    "authorRole": "Penulis pertanian",
+    "publishedAt": "2026-08-20",
+    "updatedAt": "2026-11-01",
+    "fieldVerified": false,
+    "tags": [
+      "alat",
+      "populasi",
+      "benih"
+    ],
+    "body": "Populasi tanaman menentukan dosis pupuk, kebutuhan benih, dan perkiraan hasil.\n\n## Rumus\n\nLuas efektif = luas lahan × (1 − bagian non-tanam). Populasi = luas efektif ÷ (jarak baris × jarak dalam baris). Kebutuhan benih = populasi × (1 + cadangan sulam) ÷ daya kecambah.\n\n[[hitung:populasi]]\n\n:::catatan\nSatuan jarak harus konsisten. Alat ini memakai meter, sedangkan luas dapat dimasukkan dalam m² atau ha.\n:::",
+    "readingMinutes": 5
+  },
+  {
+    "id": "g07",
+    "slug": "menyusun-rab-usaha-tani",
+    "title": "Menyusun RAB Usaha Tani yang Realistis",
+    "summary": "Memisahkan biaya tetap dan variabel, lalu menghitung R/C, BEP harga, dan BEP produksi.",
+    "category": "usaha-tani",
+    "author": "Sari Rahmawati",
+    "authorRole": "Penyuluh lapangan",
+    "publishedAt": "2026-09-05",
+    "updatedAt": "2026-10-28",
+    "fieldVerified": true,
+    "verifiedAt": "Oktober 2026",
+    "verifiedBy": "Sari Rahmawati",
+    "tags": [
+      "usaha",
+      "rab",
+      "bep"
+    ],
+    "body": "RAB yang baik jujur tentang asumsi. Tuliskan harga input yang benar-benar Anda bayar, bukan harga di pasar yang berbeda wilayah.\n\n## Komponen biaya\n\n- **Biaya tetap:** sewa lahan, alat, dan tenaga tetap.\n- **Biaya variabel:** benih, pupuk, pestisida, irigasi, dan tenaga panen.\n\n[[hitung:usaha]]\n\n:::catatan\nLaba = pendapatan − biaya. R/C = pendapatan ÷ biaya. BEP harga = biaya ÷ hasil. Semua angka merupakan panduan umum.\n:::",
+    "readingMinutes": 5
+  },
+  {
+    "id": "g08",
+    "slug": "kompos-matang",
+    "title": "Membuat Kompos Matang untuk Kebun Rumahan",
+    "summary": "Ciri kompos siap pakai dan cara menghindari bau serta hama.",
+    "category": "pemupukan",
+    "author": "Andi Wijaya",
+    "authorRole": "Penulis pertanian",
+    "publishedAt": "2026-07-14",
+    "updatedAt": "2026-09-02",
+    "fieldVerified": false,
+    "tags": [
+      "kompos",
+      "organik"
+    ],
+    "body": "Kompos matang berwarna cokelat gelap, remah, dan tidak berbau busuk. Bahan yang belum matang dapat menarik hama dan mengikat nitrogen.\n\n## Langkah singkat\n\n1. Campur bahan hijau dan cokelat dengan perbandingan 1:2.\n2. Basahi hingga lembap, bukan becek.\n3. Balik tumpukan setiap 7–10 hari.\n4. Hemati 4–8 minggu sampai suhu turun dan warna merata.",
+    "readingMinutes": 5
+  },
+  {
+    "id": "g09",
+    "slug": "panen-cabai",
+    "title": "Panen Cabai: Ciri Matang dan Penanganan Pasca Panen",
+    "summary": "Kapan memetik cabai, cara menjaga kualitas, dan kesalahan penyimpanan.",
+    "category": "pascapanen",
+    "commodityId": "cabai",
+    "author": "Sari Rahmawati",
+    "authorRole": "Penyuluh lapangan",
+    "publishedAt": "2026-10-30",
+    "updatedAt": "2026-11-10",
+    "fieldVerified": true,
+    "verifiedAt": "November 2026",
+    "verifiedBy": "Sari Rahmawati",
+    "tags": [
+      "cabai",
+      "panen"
+    ],
+    "body": "Cabai dipetik saat buah mencapai warna merah penuh dan kulit mengkilap. Pemotongan dengan gunung atau pisau bersih mengurangi kerusakan tangkai.\n\n## Penanganan\n\n- Petik pada pagi hari setelah embun kering.\n- Gunakan wadah berlubang agar udara beredar.\n- Jangan mencuci sebelum disimpan.\n- Simpan di tempat teduh dengan sirkulasi udara baik.",
+    "readingMinutes": 5
+  }
+]

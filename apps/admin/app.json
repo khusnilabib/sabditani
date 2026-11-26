@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "SABDITANI Admin",
+    "slug": "sabditani-admin",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/brand/logo-icon-transparent.png",
+    "scheme": "sabditani",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/brand/logo-icon-transparent.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FBF8F1"
+    },
+    "android": {
+      "package": "id.sabditani.admin",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/brand/logo-icon-transparent.png",
+        "backgroundColor": "#FBF8F1"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "id.sabditani.admin",
+      "supportsTablet": true
+    },
+    "plugins": [
+      "expo-router",
+      ["expo-image-picker", { "photosPermission": "SABDITANI Admin memerlukan akses foto untuk menambah foto lapangan pada artikel." }],
+      ["expo-local-authentication", { "faceIDPermission": "Gunakan biometrik untuk membuka SABDITANI Admin dengan aman." }]
+    ],
+    "experiments": { "typedRoutes": false }
+  }
+}

@@ -1,0 +1,16 @@
+node_modules/
+.next/
+dist/
+.expo/
+android/
+ios/
+*.log
+.env
+.env.local
+.env.*.local
+.dev.vars
+.DS_Store
+coverage/
+*.tsbuildinfo
+
+supabase/.temp/

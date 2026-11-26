@@ -1,0 +1,41 @@
+name: web-deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/web/**'
+      - 'packages/**'
+      - 'next.config.ts'
+      - 'package*.json'
+  repository_dispatch:
+    types: [publish]
+  workflow_dispatch:
+
+concurrency:
+  group: web-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.19.4
+          cache: npm
+      - run: npm ci && npm run tokens && npm run data
+      - run: npx vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+        working-directory: apps/web
+      - run: npx vercel build --prod --token=$VERCEL_TOKEN
+        working-directory: apps/web
+      - run: npx vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
+        working-directory: apps/web
+      - name: Catat status deploy
+        if: always()
+        run: echo "Deployment selesai dengan status ${{ job.status }}"

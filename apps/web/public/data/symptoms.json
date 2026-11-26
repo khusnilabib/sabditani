@@ -1,0 +1,50 @@
+[
+  {
+    "id": "daun-menggulung",
+    "name": "Daun menggulung",
+    "bodyPart": "daun",
+    "description": "Daun menggulung ke dalam, sering disertai kutu halus di bawah daun."
+  },
+  {
+    "id": "bercak-cokelat",
+    "name": "Bercak cokelat",
+    "bodyPart": "daun",
+    "description": "Bercak cokelat dengan tepi gelap, dapat melebar dan berlubang."
+  },
+  {
+    "id": "daun-kuning",
+    "name": "Daun menguning",
+    "bodyPart": "daun",
+    "description": "Kuning merata atau pada tulang daun, pertumbuhan terhambat."
+  },
+  {
+    "id": "layu-mendadak",
+    "name": "Layu mendadak",
+    "bodyPart": "seluruh",
+    "description": "Tanaman layu meski tanah lembap, sering dimulai dari satu sisi."
+  },
+  {
+    "id": "bintik-putih",
+    "name": "Bintik putih halus",
+    "bodyPart": "daun",
+    "description": "Bintik putih keperakan dan kotoran hitam di permukaan daun."
+  },
+  {
+    "id": "bunga-rontok",
+    "name": "Bunga rontok",
+    "bodyPart": "bunga",
+    "description": "Bunga dan bunga muda rontok sebelum membentuk buah."
+  },
+  {
+    "id": "buah-bercak-hitam",
+    "name": "Buah berbercak hitam",
+    "bodyPart": "buah",
+    "description": "Bercak hitam lunak pada buah, sering diawali bercak pada daun."
+  },
+  {
+    "id": "akar-busuk",
+    "name": "Akar berwarna cokelat dan busuk",
+    "bodyPart": "akar",
+    "description": "Akar lunak, berbau, dan tanaman mudah dicabut."
+  }
+]

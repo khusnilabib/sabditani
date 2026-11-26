@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cabai",
+    "slug": "cabai",
+    "name": "Cabai",
+    "group": "hortikultura",
+    "summary": "Tanaman buah bernilai tinggi yang sensitif terhadap air dan suhu.",
+    "detail": "Cabai cocok ditanam pada dataran rendah sampai menengah dengan drainase baik. Kunci budidayanya adalah pengaturan air, dosis nitrogen yang tidak berlebihan, dan pengawasan hama sejak awal pertumbuhan.",
+    "accent": "#B3382C",
+    "seedRate": "± 0,5–1 kg benih per ha"
+  },
+  {
+    "id": "padi",
+    "slug": "padi",
+    "name": "Padi",
+    "group": "pangan",
+    "summary": "Tanaman pangan utama dengan kebutuhan air dan jadwal tanam yang jelas.",
+    "detail": "Padi sawah memerlukan pengelolaan air bertahap: penggenangan dangkal saat vegetatif, pengeringan sebelum panen. Varietas dan wilayah menentukan umur panen.",
+    "accent": "#C39A3F",
+    "seedRate": "± 25–30 kg benih per ha"
+  },
+  {
+    "id": "jagung",
+    "slug": "jagung",
+    "name": "Jagung",
+    "group": "pangan",
+    "summary": "Tanaman serbaguna untuk pangan dan pakan dengan jarak tanam menghasilkan.",
+    "detail": "Jagung responsif terhadap pupuk nitrogen dan pengaturan jarak tanam. Penentuan waktu tanam yang tepat menghindari fase bunga saat kemarau puncak.",
+    "accent": "#A8802F",
+    "seedRate": "± 20–25 kg benih per ha"
+  },
+  {
+    "id": "tomat",
+    "slug": "tomat",
+    "name": "Tomat",
+    "group": "hortikultura",
+    "summary": "Buah bernilai tinggi yang mudah terserang penyakit daun bila lembap.",
+    "detail": "Tomat memerlukan sirkulasi udara yang baik, mulsa, dan pemangkasan untuk mengurangi kelembapan kanopi. Hindari menyiram daun saat sore.",
+    "accent": "#B3382C",
+    "seedRate": "± 0,3–0,5 kg benih per ha"
+  },
+  {
+    "id": "bawang-merah",
+    "slug": "bawang-merah",
+    "name": "Bawang Merah",
+    "group": "hortikultura",
+    "summary": "Komoditas musiman dengan toleransi rendah terhadap genangan.",
+    "detail": "Bawang merah sebaiknya ditanam menjelang musim kemarau dengan mulsa. Persiapan bibit dan pengendalian jamur menjadi penentu keberhasilan.",
+    "accent": "#7A5C1D",
+    "seedRate": "± 700–1.000 kg umbi per ha"
+  },
+  {
+    "id": "kedelai",
+    "slug": "kedelai",
+    "name": "Kedelai",
+    "group": "pangan",
+    "summary": "Tanaman leguminosa yang menyumbang nitrogen dan cocok sebagai tanaman rotasi.",
+    "detail": "Kedelai cocok sebagai tanaman rotasi setelah padi. Inokulasi rizobium dan pengaturan air pada fase pengisian polong meningkatkan hasil.",
+    "accent": "#2B6849",
+    "seedRate": "± 30–40 kg benih per ha"
+  }
+]

@@ -1,0 +1,16 @@
+name = "sabditani-api"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+# Tambahkan secrets dengan `wrangler secret put NAMA` sebelum deploy.
+# [vars]
+# SUPABASE_URL = "https://....supabase.co"
+# SUPABASE_ANON_KEY = "..."
+# GITHUB_REPO = "username/sabditani"
+# ALLOWED_ORIGIN = "https://sabditani.id"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "sabditani-media"
+preview_bucket_name = "sabditani-media-preview"

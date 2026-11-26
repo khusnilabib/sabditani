@@ -1,0 +1,71 @@
+[
+  {
+    "id": "jawa-rendah",
+    "slug": "jawa-rendah",
+    "name": "Jawa, dataran rendah",
+    "description": "Musim hujan November–Maret. Cocok untuk cabai, padi, dan jagung.",
+    "rainyMonths": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "jawa-tinggi",
+    "slug": "jawa-tinggi",
+    "name": "Jawa, dataran tinggi",
+    "description": "Lebih sejuk dengan musim hujan lebih panjang; cocok untuk sayur dan bawang.",
+    "rainyMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "sumatera",
+    "slug": "sumatera",
+    "name": "Sumatera, dataran rendah",
+    "description": "Hujan mulai lebih awal. Jendela tanam disesuaikan lebih awal.",
+    "rainyMonths": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "sulawesi",
+    "slug": "sulawesi",
+    "name": "Sulawesi, dataran rendah",
+    "description": "Pola hujan mirip Jawa dengan variasi antarkabupaten.",
+    "rainyMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "kalimantan",
+    "slug": "kalimantan",
+    "name": "Kalimantan, dataran rendah",
+    "description": "Curah hujan tinggi; perhatikan drainase dan pengendalian penyakit.",
+    "rainyMonths": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "pupuk": {
+    "defaultDosis": 300,
+    "defaultApplications": 3,
+    "defaultPrice": 14000,
+    "note": "Dosis contoh untuk NPK 16-16-16 pada kondisi tanah menengah."
+  },
+  "populasi": {
+    "defaultRow": 0.7,
+    "defaultPlant": 0.25,
+    "defaultNonPlant": 0.1,
+    "defaultReserve": 0.1,
+    "defaultGermination": 0.85,
+    "note": "Satuan jarak dalam meter; cadangan sulam dan daya kecambah dalam persentase."
+  },
+  "usaha": {
+    "defaultYield": 4000,
+    "defaultPrice": 18000,
+    "defaultFixedCost": 4500000,
+    "defaultVariableCost": 12000000,
+    "note": "Contoh untuk satu hektar. Ganti dengan angka lapangan Anda."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-11-26T03:04:30.263Z",
+  "counts": {
+    "commodities": 6,
+    "crop_calendar": 130,
+    "zones": 5,
+    "pests": 6,
+    "symptoms": 8,
+    "guides": 9,
+    "search-index": 24
+  },
+  "note": "Snapshot statis dibuat saat build. Web publik tidak memanggil Supabase saat runtime."
+}

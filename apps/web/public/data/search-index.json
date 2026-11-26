@@ -1,0 +1,170 @@
+[
+  {
+    "type": "panduan",
+    "title": "Pemupukan Cabai: Dosis dan Waktu yang Aman",
+    "summary": "Cara menentukan kebutuhan NPK untuk cabai, kapan diberikan, dan kesalahan yang sering terjadi.",
+    "url": "/panduan/pemupukan-cabai",
+    "keywords": "cabai npk pupuk"
+  },
+  {
+    "type": "panduan",
+    "title": "Menyiapkan Lahan Cabai agar Tidak Genangan",
+    "summary": "Langkah mengolah lahan, membuat bedengan, dan mengatur drainase sebelum tanam cabai.",
+    "url": "/panduan/persiapan-lahan-cabai",
+    "keywords": "cabai lahan drainase"
+  },
+  {
+    "type": "panduan",
+    "title": "Pengaturan Air Padi Sawah dari Tanam sampai Panen",
+    "summary": "Kedalaman air yang disarankan pada setiap fase pertumbuhan padi.",
+    "url": "/panduan/pengairan-padi",
+    "keywords": "padi air sawah"
+  },
+  {
+    "type": "panduan",
+    "title": "Budidaya Jagung Manis: Jarak Tanam dan Waktu Panen",
+    "summary": "Pengaturan jarak tanam, pemupukan, dan ciri tongkol siap panen.",
+    "url": "/panduan/budidaya-jagung-manis",
+    "keywords": "jagung jarak tanam"
+  },
+  {
+    "type": "panduan",
+    "title": "Mengenali dan Mengendalikan Kutu Keputih",
+    "summary": "Ciri serangan, ambang pengendalian, dan urutan tindakan yang aman.",
+    "url": "/panduan/mengenali-kutu-keputih",
+    "keywords": "hama cabai whitefly"
+  },
+  {
+    "type": "panduan",
+    "title": "Menghitung Populasi Tanam dan Kebutuhan Benih",
+    "summary": "Rumus sederhana untuk menentukan jumlah tanaman dan benih berdasarkan jarak tanam.",
+    "url": "/panduan/menghitung-populasi-tanam",
+    "keywords": "alat populasi benih"
+  },
+  {
+    "type": "panduan",
+    "title": "Menyusun RAB Usaha Tani yang Realistis",
+    "summary": "Memisahkan biaya tetap dan variabel, lalu menghitung R/C, BEP harga, dan BEP produksi.",
+    "url": "/panduan/menyusun-rab-usaha-tani",
+    "keywords": "usaha rab bep"
+  },
+  {
+    "type": "panduan",
+    "title": "Membuat Kompos Matang untuk Kebun Rumahan",
+    "summary": "Ciri kompos siap pakai dan cara menghindari bau serta hama.",
+    "url": "/panduan/kompos-matang",
+    "keywords": "kompos organik"
+  },
+  {
+    "type": "panduan",
+    "title": "Panen Cabai: Ciri Matang dan Penanganan Pasca Panen",
+    "summary": "Kapan memetik cabai, cara menjaga kualitas, dan kesalahan penyimpanan.",
+    "url": "/panduan/panen-cabai",
+    "keywords": "cabai panen"
+  },
+  {
+    "type": "komoditas",
+    "title": "Cabai",
+    "summary": "Tanaman buah bernilai tinggi yang sensitif terhadap air dan suhu.",
+    "url": "/komoditas/cabai",
+    "keywords": "hortikultura"
+  },
+  {
+    "type": "komoditas",
+    "title": "Padi",
+    "summary": "Tanaman pangan utama dengan kebutuhan air dan jadwal tanam yang jelas.",
+    "url": "/komoditas/padi",
+    "keywords": "pangan"
+  },
+  {
+    "type": "komoditas",
+    "title": "Jagung",
+    "summary": "Tanaman serbaguna untuk pangan dan pakan dengan jarak tanam menghasilkan.",
+    "url": "/komoditas/jagung",
+    "keywords": "pangan"
+  },
+  {
+    "type": "komoditas",
+    "title": "Tomat",
+    "summary": "Buah bernilai tinggi yang mudah terserang penyakit daun bila lembap.",
+    "url": "/komoditas/tomat",
+    "keywords": "hortikultura"
+  },
+  {
+    "type": "komoditas",
+    "title": "Bawang Merah",
+    "summary": "Komoditas musiman dengan toleransi rendah terhadap genangan.",
+    "url": "/komoditas/bawang-merah",
+    "keywords": "hortikultura"
+  },
+  {
+    "type": "komoditas",
+    "title": "Kedelai",
+    "summary": "Tanaman leguminosa yang menyumbang nitrogen dan cocok sebagai tanaman rotasi.",
+    "url": "/komoditas/kedelai",
+    "keywords": "pangan"
+  },
+  {
+    "type": "hama",
+    "title": "Kutu Keputih (Whitefly)",
+    "summary": "Serangga kecil bersayap putih yang mengisap cairan daun dan menularkan virus.",
+    "url": "/hama/kutu-keputih",
+    "keywords": "hama"
+  },
+  {
+    "type": "hama",
+    "title": "Hawar Daun (Jamur)",
+    "summary": "Penyakit jamur yang menimbulkan bercak cokelat dan dapat merusak daun dalam waktu singkat.",
+    "url": "/hama/hawar-daun",
+    "keywords": "penyakit"
+  },
+  {
+    "type": "hama",
+    "title": "Layu Bakteri",
+    "summary": "Penyakit yang menyebabkan layu mendadak karena pembuluh air tersumbat.",
+    "url": "/hama/layu-bakteri",
+    "keywords": "penyakit"
+  },
+  {
+    "type": "hama",
+    "title": "Busuk Akar",
+    "summary": "Akar membusuk karena tanah terlalu basa dan kurang oksigen.",
+    "url": "/hama/busuk-akar",
+    "keywords": "penyakit"
+  },
+  {
+    "type": "hama",
+    "title": "Kekurangan Nitrogen",
+    "summary": "Daun tua menguning merata karena pasokan nitrogen tidak mencukupi.",
+    "url": "/hama/kekurangan-nitrogen",
+    "keywords": "kekurangan_hara"
+  },
+  {
+    "type": "hama",
+    "title": "Thrips",
+    "summary": "Serangga kecil ramping yang merusak bunga dan mencatat goresan perak pada daun.",
+    "url": "/hama/thrips",
+    "keywords": "hama"
+  },
+  {
+    "type": "alat",
+    "title": "Hitung Pupuk",
+    "summary": "Kebutuhan pupuk dan biaya per aplikasi.",
+    "url": "/app/alat/pupuk",
+    "keywords": "alat hitung kalkulator"
+  },
+  {
+    "type": "alat",
+    "title": "Populasi Tanam",
+    "summary": "Jumlah tanaman dan kebutuhan benih.",
+    "url": "/app/alat/populasi",
+    "keywords": "alat hitung kalkulator"
+  },
+  {
+    "type": "alat",
+    "title": "Analisis Usaha",
+    "summary": "Laba, R/C, dan titik impas.",
+    "url": "/app/alat/usaha",
+    "keywords": "alat hitung kalkulator"
+  }
+]

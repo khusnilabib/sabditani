@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "cabai-jawa-rendah-semai",
+    "commodityId": "cabai",
+    "zoneId": "jawa-rendah",
+    "activity": "semai",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Semai di bedengan teduh, sirup embun dan hindari genangan. (Jawa, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "cabai-jawa-rendah-olah_lahan",
+    "commodityId": "cabai",
+    "zoneId": "jawa-rendah",
+    "activity": "olah_lahan",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Olah lahan, tambahkan kompos, dan buat bedengan tinggi 20–30 cm. (Jawa, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "cabai-jawa-rendah-tanam",
+    "commodityId": "cabai",
+    "zoneId": "jawa-rendah",
+    "activity": "tanam",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Pindah tanam bibit umur 25–30 hari pada pagi atau sore hari. (Jawa, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "cabai-jawa-rendah-pemupukan",
+    "commodityId": "cabai",
+    "zoneId": "jawa-rendah",
+    "activity": "pemupukan",
+    "startMonth": 12,
+    "endMonth": 2,
+    "note": "Pupuk susulan bertahap: NPK dasar, lalu urea/kalium sesuai analisis tanah. (Jawa, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "cabai-jawa-rendah-panen",
+    "commodityId": "cabai",
+    "zoneId": "jawa-rendah",
+    "activity": "panen",
+    "startMonth": 2,
+    "endMonth": 5,
+    "note": "Panen bertahap saat buah merah penuh, 2–3 hari sekali. (Jawa, dataran rendah)",
+    "_index": 4
+  },
+  {
+    "id": "padi-jawa-rendah-semai",
+    "commodityId": "padi",
+    "zoneId": "jawa-rendah",
+    "activity": "semai",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Semai benih di pesemaian, genangan 2–3 cm. (Jawa, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "padi-jawa-rendah-olah_lahan",
+    "commodityId": "padi",
+    "zoneId": "jawa-rendah",
+    "activity": "olah_lahan",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Bajak, perata, dan perbaiki pematang tangki air. (Jawa, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "padi-jawa-rendah-tanam",
+    "commodityId": "padi",
+    "zoneId": "jawa-rendah",
+    "activity": "tanam",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Tanam bibit umur 18–25 hari dengan jarak 20 × 20 cm. (Jawa, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "padi-jawa-rendah-pemupukan",
+    "commodityId": "padi",
+    "zoneId": "jawa-rendah",
+    "activity": "pemupukan",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Urea dan NPK pada 7, 21, dan 35 hari setelah tanam. (Jawa, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "padi-jawa-rendah-panen",
+    "commodityId": "padi",
+    "zoneId": "jawa-rendah",
+    "activity": "panen",
+    "startMonth": 3,
+    "endMonth": 4,
+    "note": "Panen saat 80–90% malai menguning dan butir mengeras. (Jawa, dataran rendah)",
+    "_index": 4
+  },
+  {
+    "id": "jagung-jawa-rendah-olah_lahan",
+    "commodityId": "jagung",
+    "zoneId": "jawa-rendah",
+    "activity": "olah_lahan",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Olah minimal, buat larikan, dan siapkan mulsa. (Jawa, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "jagung-jawa-rendah-tanam",
+    "commodityId": "jagung",
+    "zoneId": "jawa-rendah",
+    "activity": "tanam",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Tanam pada awal hujan, jarak 70 × 25 cm, 2 benih per lubang. (Jawa, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "jagung-jawa-rendah-pemupukan",
+    "commodityId": "jagung",
+    "zoneId": "jawa-rendah",
+    "activity": "pemupukan",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "NPK dasar saat tanam, urea saat 21 dan 42 hari. (Jawa, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "jagung-jawa-rendah-panen",
+    "commodityId": "jagung",
+    "zoneId": "jawa-rendah",
+    "activity": "panen",
+    "startMonth": 2,
+    "endMonth": 3,
+    "note": "Panen tongkol saat kelopak kering dan biji keras. (Jawa, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "tomat-jawa-rendah-semai",
+    "commodityId": "tomat",
+    "zoneId": "jawa-rendah",
+    "activity": "semai",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Semai di tray, gunakan media steril untuk cegah layu. (Jawa, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "tomat-jawa-rendah-tanam",
+    "commodityId": "tomat",
+    "zoneId": "jawa-rendah",
+    "activity": "tanam",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Tanam dengan jarak 60 × 60 cm dan pasang ajir. (Jawa, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "tomat-jawa-rendah-pemupukan",
+    "commodityId": "tomat",
+    "zoneId": "jawa-rendah",
+    "activity": "pemupukan",
+    "startMonth": 12,
+    "endMonth": 2,
+    "note": "Berikan kalium lebih banyak saat pembentukan buah. (Jawa, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "tomat-jawa-rendah-panen",
+    "commodityId": "tomat",
+    "zoneId": "jawa-rendah",
+    "activity": "panen",
+    "startMonth": 2,
+    "endMonth": 4,
+    "note": "Panen buah yang mulai merah untuk menekan serangan jamur. (Jawa, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "bawang-merah-jawa-rendah-olah_lahan",
+    "commodityId": "bawang-merah",
+    "zoneId": "jawa-rendah",
+    "activity": "olah_lahan",
+    "startMonth": 5,
+    "endMonth": 6,
+    "note": "Buat bedengan tinggi dan gunakan mulsa hitam/putih. (Jawa, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "bawang-merah-jawa-rendah-tanam",
+    "commodityId": "bawang-merah",
+    "zoneId": "jawa-rendah",
+    "activity": "tanam",
+    "startMonth": 6,
+    "endMonth": 7,
+    "note": "Tanam umbi bibit di awal kemarau, kedalaman 2–3 cm. (Jawa, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "bawang-merah-jawa-rendah-pemupukan",
+    "commodityId": "bawang-merah",
+    "zoneId": "jawa-rendah",
+    "activity": "pemupukan",
+    "startMonth": 7,
+    "endMonth": 8,
+    "note": "Pupuk NPK dan kalium, hentikan nitrogen menjelang pembentukan umbi. (Jawa, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "bawang-merah-jawa-rendah-panen",
+    "commodityId": "bawang-merah",
+    "zoneId": "jawa-rendah",
+    "activity": "panen",
+    "startMonth": 9,
+    "endMonth": 10,
+    "note": "Panen saat daun menguning dan umbi mengeras. (Jawa, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "kedelai-jawa-rendah-olah_lahan",
+    "commodityId": "kedelai",
+    "zoneId": "jawa-rendah",
+    "activity": "olah_lahan",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Olah lahan setelah padi, pertahankan mulsa jerami. (Jawa, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "kedelai-jawa-rendah-tanam",
+    "commodityId": "kedelai",
+    "zoneId": "jawa-rendah",
+    "activity": "tanam",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Tanam dengan jarak 40 × 20 cm setelah lahan cukup lembap. (Jawa, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "kedelai-jawa-rendah-pemupukan",
+    "commodityId": "kedelai",
+    "zoneId": "jawa-rendah",
+    "activity": "pemupukan",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Inokulasi rizobium dan berikan P dasar. (Jawa, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "kedelai-jawa-rendah-panen",
+    "commodityId": "kedelai",
+    "zoneId": "jawa-rendah",
+    "activity": "panen",
+    "startMonth": 2,
+    "endMonth": 3,
+    "note": "Panen saat 90% polong cokelat dan biji lepas dari kulit. (Jawa, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "cabai-jawa-tinggi-semai",
+    "commodityId": "cabai",
+    "zoneId": "jawa-tinggi",
+    "activity": "semai",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Semai di bedengan teduh, sirup embun dan hindari genangan. (Jawa, dataran tinggi)",
+    "_index": 0
+  },
+  {
+    "id": "cabai-jawa-tinggi-olah_lahan",
+    "commodityId": "cabai",
+    "zoneId": "jawa-tinggi",
+    "activity": "olah_lahan",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Olah lahan, tambahkan kompos, dan buat bedengan tinggi 20–30 cm. (Jawa, dataran tinggi)",
+    "_index": 1
+  },
+  {
+    "id": "cabai-jawa-tinggi-tanam",
+    "commodityId": "cabai",
+    "zoneId": "jawa-tinggi",
+    "activity": "tanam",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Pindah tanam bibit umur 25–30 hari pada pagi atau sore hari. (Jawa, dataran tinggi)",
+    "_index": 2
+  },
+  {
+    "id": "cabai-jawa-tinggi-pemupukan",
+    "commodityId": "cabai",
+    "zoneId": "jawa-tinggi",
+    "activity": "pemupukan",
+    "startMonth": 1,
+    "endMonth": 3,
+    "note": "Pupuk susulan bertahap: NPK dasar, lalu urea/kalium sesuai analisis tanah. (Jawa, dataran tinggi)",
+    "_index": 3
+  },
+  {
+    "id": "cabai-jawa-tinggi-panen",
+    "commodityId": "cabai",
+    "zoneId": "jawa-tinggi",
+    "activity": "panen",
+    "startMonth": 3,
+    "endMonth": 6,
+    "note": "Panen bertahap saat buah merah penuh, 2–3 hari sekali. (Jawa, dataran tinggi)",
+    "_index": 4
+  },
+  {
+    "id": "padi-jawa-tinggi-semai",
+    "commodityId": "padi",
+    "zoneId": "jawa-tinggi",
+    "activity": "semai",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Semai benih di pesemaian, genangan 2–3 cm. (Jawa, dataran tinggi)",
+    "_index": 0
+  },
+  {
+    "id": "padi-jawa-tinggi-olah_lahan",
+    "commodityId": "padi",
+    "zoneId": "jawa-tinggi",
+    "activity": "olah_lahan",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Bajak, perata, dan perbaiki pematang tangki air. (Jawa, dataran tinggi)",
+    "_index": 1
+  },
+  {
+    "id": "padi-jawa-tinggi-tanam",
+    "commodityId": "padi",
+    "zoneId": "jawa-tinggi",
+    "activity": "tanam",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Tanam bibit umur 18–25 hari dengan jarak 20 × 20 cm. (Jawa, dataran tinggi)",
+    "_index": 2
+  },
+  {
+    "id": "padi-jawa-tinggi-pemupukan",
+    "commodityId": "padi",
+    "zoneId": "jawa-tinggi",
+    "activity": "pemupukan",
+    "startMonth": 1,
+    "endMonth": 2,
+    "note": "Urea dan NPK pada 7, 21, dan 35 hari setelah tanam. (Jawa, dataran tinggi)",
+    "_index": 3
+  },
+  {
+    "id": "padi-jawa-tinggi-panen",
+    "commodityId": "padi",
+    "zoneId": "jawa-tinggi",
+    "activity": "panen",
+    "startMonth": 4,
+    "endMonth": 5,
+    "note": "Panen saat 80–90% malai menguning dan butir mengeras. (Jawa, dataran tinggi)",
+    "_index": 4
+  },
+  {
+    "id": "jagung-jawa-tinggi-olah_lahan",
+    "commodityId": "jagung",
+    "zoneId": "jawa-tinggi",
+    "activity": "olah_lahan",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Olah minimal, buat larikan, dan siapkan mulsa. (Jawa, dataran tinggi)",
+    "_index": 0
+  },
+  {
+    "id": "jagung-jawa-tinggi-tanam",
+    "commodityId": "jagung",
+    "zoneId": "jawa-tinggi",
+    "activity": "tanam",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Tanam pada awal hujan, jarak 70 × 25 cm, 2 benih per lubang. (Jawa, dataran tinggi)",
+    "_index": 1
+  },
+  {
+    "id": "jagung-jawa-tinggi-pemupukan",
+    "commodityId": "jagung",
+    "zoneId": "jawa-tinggi",
+    "activity": "pemupukan",
+    "startMonth": 1,
+    "endMonth": 2,
+    "note": "NPK dasar saat tanam, urea saat 21 dan 42 hari. (Jawa, dataran tinggi)",
+    "_index": 2
+  },
+  {
+    "id": "jagung-jawa-tinggi-panen",
+    "commodityId": "jagung",
+    "zoneId": "jawa-tinggi",
+    "activity": "panen",
+    "startMonth": 3,
+    "endMonth": 4,
+    "note": "Panen tongkol saat kelopak kering dan biji keras. (Jawa, dataran tinggi)",
+    "_index": 3
+  },
+  {
+    "id": "tomat-jawa-tinggi-semai",
+    "commodityId": "tomat",
+    "zoneId": "jawa-tinggi",
+    "activity": "semai",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Semai di tray, gunakan media steril untuk cegah layu. (Jawa, dataran tinggi)",
+    "_index": 0
+  },
+  {
+    "id": "tomat-jawa-tinggi-tanam",
+    "commodityId": "tomat",
+    "zoneId": "jawa-tinggi",
+    "activity": "tanam",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Tanam dengan jarak 60 × 60 cm dan pasang ajir. (Jawa, dataran tinggi)",
+    "_index": 1
+  },
+  {
+    "id": "tomat-jawa-tinggi-pemupukan",
+    "commodityId": "tomat",
+    "zoneId": "jawa-tinggi",
+    "activity": "pemupukan",
+    "startMonth": 1,
+    "endMonth": 3,
+    "note": "Berikan kalium lebih banyak saat pembentukan buah. (Jawa, dataran tinggi)",
+    "_index": 2
+  },
+  {
+    "id": "tomat-jawa-tinggi-panen",
+    "commodityId": "tomat",
+    "zoneId": "jawa-tinggi",
+    "activity": "panen",
+    "startMonth": 3,
+    "endMonth": 5,
+    "note": "Panen buah yang mulai merah untuk menekan serangan jamur. (Jawa, dataran tinggi)",
+    "_index": 3
+  },
+  {
+    "id": "bawang-merah-jawa-tinggi-olah_lahan",
+    "commodityId": "bawang-merah",
+    "zoneId": "jawa-tinggi",
+    "activity": "olah_lahan",
+    "startMonth": 6,
+    "endMonth": 7,
+    "note": "Buat bedengan tinggi dan gunakan mulsa hitam/putih. (Jawa, dataran tinggi)",
+    "_index": 0
+  },
+  {
+    "id": "bawang-merah-jawa-tinggi-tanam",
+    "commodityId": "bawang-merah",
+    "zoneId": "jawa-tinggi",
+    "activity": "tanam",
+    "startMonth": 7,
+    "endMonth": 8,
+    "note": "Tanam umbi bibit di awal kemarau, kedalaman 2–3 cm. (Jawa, dataran tinggi)",
+    "_index": 1
+  },
+  {
+    "id": "bawang-merah-jawa-tinggi-pemupukan",
+    "commodityId": "bawang-merah",
+    "zoneId": "jawa-tinggi",
+    "activity": "pemupukan",
+    "startMonth": 8,
+    "endMonth": 9,
+    "note": "Pupuk NPK dan kalium, hentikan nitrogen menjelang pembentukan umbi. (Jawa, dataran tinggi)",
+    "_index": 2
+  },
+  {
+    "id": "bawang-merah-jawa-tinggi-panen",
+    "commodityId": "bawang-merah",
+    "zoneId": "jawa-tinggi",
+    "activity": "panen",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Panen saat daun menguning dan umbi mengeras. (Jawa, dataran tinggi)",
+    "_index": 3
+  },
+  {
+    "id": "kedelai-jawa-tinggi-olah_lahan",
+    "commodityId": "kedelai",
+    "zoneId": "jawa-tinggi",
+    "activity": "olah_lahan",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Olah lahan setelah padi, pertahankan mulsa jerami. (Jawa, dataran tinggi)",
+    "_index": 0
+  },
+  {
+    "id": "kedelai-jawa-tinggi-tanam",
+    "commodityId": "kedelai",
+    "zoneId": "jawa-tinggi",
+    "activity": "tanam",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Tanam dengan jarak 40 × 20 cm setelah lahan cukup lembap. (Jawa, dataran tinggi)",
+    "_index": 1
+  },
+  {
+    "id": "kedelai-jawa-tinggi-pemupukan",
+    "commodityId": "kedelai",
+    "zoneId": "jawa-tinggi",
+    "activity": "pemupukan",
+    "startMonth": 1,
+    "endMonth": 2,
+    "note": "Inokulasi rizobium dan berikan P dasar. (Jawa, dataran tinggi)",
+    "_index": 2
+  },
+  {
+    "id": "kedelai-jawa-tinggi-panen",
+    "commodityId": "kedelai",
+    "zoneId": "jawa-tinggi",
+    "activity": "panen",
+    "startMonth": 3,
+    "endMonth": 4,
+    "note": "Panen saat 90% polong cokelat dan biji lepas dari kulit. (Jawa, dataran tinggi)",
+    "_index": 3
+  },
+  {
+    "id": "cabai-sumatera-semai",
+    "commodityId": "cabai",
+    "zoneId": "sumatera",
+    "activity": "semai",
+    "startMonth": 9,
+    "endMonth": 10,
+    "note": "Semai di bedengan teduh, sirup embun dan hindari genangan. (Sumatera, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "cabai-sumatera-olah_lahan",
+    "commodityId": "cabai",
+    "zoneId": "sumatera",
+    "activity": "olah_lahan",
+    "startMonth": 9,
+    "endMonth": 10,
+    "note": "Olah lahan, tambahkan kompos, dan buat bedengan tinggi 20–30 cm. (Sumatera, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "cabai-sumatera-tanam",
+    "commodityId": "cabai",
+    "zoneId": "sumatera",
+    "activity": "tanam",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Pindah tanam bibit umur 25–30 hari pada pagi atau sore hari. (Sumatera, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "cabai-sumatera-pemupukan",
+    "commodityId": "cabai",
+    "zoneId": "sumatera",
+    "activity": "pemupukan",
+    "startMonth": 11,
+    "endMonth": 1,
+    "note": "Pupuk susulan bertahap: NPK dasar, lalu urea/kalium sesuai analisis tanah. (Sumatera, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "cabai-sumatera-panen",
+    "commodityId": "cabai",
+    "zoneId": "sumatera",
+    "activity": "panen",
+    "startMonth": 1,
+    "endMonth": 4,
+    "note": "Panen bertahap saat buah merah penuh, 2–3 hari sekali. (Sumatera, dataran rendah)",
+    "_index": 4
+  },
+  {
+    "id": "padi-sumatera-semai",
+    "commodityId": "padi",
+    "zoneId": "sumatera",
+    "activity": "semai",
+    "startMonth": 9,
+    "endMonth": 10,
+    "note": "Semai benih di pesemaian, genangan 2–3 cm. (Sumatera, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "padi-sumatera-olah_lahan",
+    "commodityId": "padi",
+    "zoneId": "sumatera",
+    "activity": "olah_lahan",
+    "startMonth": 9,
+    "endMonth": 10,
+    "note": "Bajak, perata, dan perbaiki pematang tangki air. (Sumatera, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "padi-sumatera-tanam",
+    "commodityId": "padi",
+    "zoneId": "sumatera",
+    "activity": "tanam",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Tanam bibit umur 18–25 hari dengan jarak 20 × 20 cm. (Sumatera, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "padi-sumatera-pemupukan",
+    "commodityId": "padi",
+    "zoneId": "sumatera",
+    "activity": "pemupukan",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Urea dan NPK pada 7, 21, dan 35 hari setelah tanam. (Sumatera, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "padi-sumatera-panen",
+    "commodityId": "padi",
+    "zoneId": "sumatera",
+    "activity": "panen",
+    "startMonth": 2,
+    "endMonth": 3,
+    "note": "Panen saat 80–90% malai menguning dan butir mengeras. (Sumatera, dataran rendah)",
+    "_index": 4
+  },
+  {
+    "id": "jagung-sumatera-olah_lahan",
+    "commodityId": "jagung",
+    "zoneId": "sumatera",
+    "activity": "olah_lahan",
+    "startMonth": 9,
+    "endMonth": 10,
+    "note": "Olah minimal, buat larikan, dan siapkan mulsa. (Sumatera, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "jagung-sumatera-tanam",
+    "commodityId": "jagung",
+    "zoneId": "sumatera",
+    "activity": "tanam",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Tanam pada awal hujan, jarak 70 × 25 cm, 2 benih per lubang. (Sumatera, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "jagung-sumatera-pemupukan",
+    "commodityId": "jagung",
+    "zoneId": "sumatera",
+    "activity": "pemupukan",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "NPK dasar saat tanam, urea saat 21 dan 42 hari. (Sumatera, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "jagung-sumatera-panen",
+    "commodityId": "jagung",
+    "zoneId": "sumatera",
+    "activity": "panen",
+    "startMonth": 1,
+    "endMonth": 2,
+    "note": "Panen tongkol saat kelopak kering dan biji keras. (Sumatera, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "tomat-sumatera-semai",
+    "commodityId": "tomat",
+    "zoneId": "sumatera",
+    "activity": "semai",
+    "startMonth": 9,
+    "endMonth": 10,
+    "note": "Semai di tray, gunakan media steril untuk cegah layu. (Sumatera, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "tomat-sumatera-tanam",
+    "commodityId": "tomat",
+    "zoneId": "sumatera",
+    "activity": "tanam",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Tanam dengan jarak 60 × 60 cm dan pasang ajir. (Sumatera, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "tomat-sumatera-pemupukan",
+    "commodityId": "tomat",
+    "zoneId": "sumatera",
+    "activity": "pemupukan",
+    "startMonth": 11,
+    "endMonth": 1,
+    "note": "Berikan kalium lebih banyak saat pembentukan buah. (Sumatera, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "tomat-sumatera-panen",
+    "commodityId": "tomat",
+    "zoneId": "sumatera",
+    "activity": "panen",
+    "startMonth": 1,
+    "endMonth": 3,
+    "note": "Panen buah yang mulai merah untuk menekan serangan jamur. (Sumatera, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "bawang-merah-sumatera-olah_lahan",
+    "commodityId": "bawang-merah",
+    "zoneId": "sumatera",
+    "activity": "olah_lahan",
+    "startMonth": 4,
+    "endMonth": 5,
+    "note": "Buat bedengan tinggi dan gunakan mulsa hitam/putih. (Sumatera, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "bawang-merah-sumatera-tanam",
+    "commodityId": "bawang-merah",
+    "zoneId": "sumatera",
+    "activity": "tanam",
+    "startMonth": 5,
+    "endMonth": 6,
+    "note": "Tanam umbi bibit di awal kemarau, kedalaman 2–3 cm. (Sumatera, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "bawang-merah-sumatera-pemupukan",
+    "commodityId": "bawang-merah",
+    "zoneId": "sumatera",
+    "activity": "pemupukan",
+    "startMonth": 6,
+    "endMonth": 7,
+    "note": "Pupuk NPK dan kalium, hentikan nitrogen menjelang pembentukan umbi. (Sumatera, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "bawang-merah-sumatera-panen",
+    "commodityId": "bawang-merah",
+    "zoneId": "sumatera",
+    "activity": "panen",
+    "startMonth": 8,
+    "endMonth": 9,
+    "note": "Panen saat daun menguning dan umbi mengeras. (Sumatera, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "kedelai-sumatera-olah_lahan",
+    "commodityId": "kedelai",
+    "zoneId": "sumatera",
+    "activity": "olah_lahan",
+    "startMonth": 9,
+    "endMonth": 10,
+    "note": "Olah lahan setelah padi, pertahankan mulsa jerami. (Sumatera, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "kedelai-sumatera-tanam",
+    "commodityId": "kedelai",
+    "zoneId": "sumatera",
+    "activity": "tanam",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Tanam dengan jarak 40 × 20 cm setelah lahan cukup lembap. (Sumatera, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "kedelai-sumatera-pemupukan",
+    "commodityId": "kedelai",
+    "zoneId": "sumatera",
+    "activity": "pemupukan",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Inokulasi rizobium dan berikan P dasar. (Sumatera, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "kedelai-sumatera-panen",
+    "commodityId": "kedelai",
+    "zoneId": "sumatera",
+    "activity": "panen",
+    "startMonth": 1,
+    "endMonth": 2,
+    "note": "Panen saat 90% polong cokelat dan biji lepas dari kulit. (Sumatera, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "cabai-sulawesi-semai",
+    "commodityId": "cabai",
+    "zoneId": "sulawesi",
+    "activity": "semai",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Semai di bedengan teduh, sirup embun dan hindari genangan. (Sulawesi, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "cabai-sulawesi-olah_lahan",
+    "commodityId": "cabai",
+    "zoneId": "sulawesi",
+    "activity": "olah_lahan",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Olah lahan, tambahkan kompos, dan buat bedengan tinggi 20–30 cm. (Sulawesi, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "cabai-sulawesi-tanam",
+    "commodityId": "cabai",
+    "zoneId": "sulawesi",
+    "activity": "tanam",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Pindah tanam bibit umur 25–30 hari pada pagi atau sore hari. (Sulawesi, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "cabai-sulawesi-pemupukan",
+    "commodityId": "cabai",
+    "zoneId": "sulawesi",
+    "activity": "pemupukan",
+    "startMonth": 12,
+    "endMonth": 2,
+    "note": "Pupuk susulan bertahap: NPK dasar, lalu urea/kalium sesuai analisis tanah. (Sulawesi, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "cabai-sulawesi-panen",
+    "commodityId": "cabai",
+    "zoneId": "sulawesi",
+    "activity": "panen",
+    "startMonth": 2,
+    "endMonth": 5,
+    "note": "Panen bertahap saat buah merah penuh, 2–3 hari sekali. (Sulawesi, dataran rendah)",
+    "_index": 4
+  },
+  {
+    "id": "padi-sulawesi-semai",
+    "commodityId": "padi",
+    "zoneId": "sulawesi",
+    "activity": "semai",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Semai benih di pesemaian, genangan 2–3 cm. (Sulawesi, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "padi-sulawesi-olah_lahan",
+    "commodityId": "padi",
+    "zoneId": "sulawesi",
+    "activity": "olah_lahan",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Bajak, perata, dan perbaiki pematang tangki air. (Sulawesi, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "padi-sulawesi-tanam",
+    "commodityId": "padi",
+    "zoneId": "sulawesi",
+    "activity": "tanam",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Tanam bibit umur 18–25 hari dengan jarak 20 × 20 cm. (Sulawesi, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "padi-sulawesi-pemupukan",
+    "commodityId": "padi",
+    "zoneId": "sulawesi",
+    "activity": "pemupukan",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Urea dan NPK pada 7, 21, dan 35 hari setelah tanam. (Sulawesi, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "padi-sulawesi-panen",
+    "commodityId": "padi",
+    "zoneId": "sulawesi",
+    "activity": "panen",
+    "startMonth": 3,
+    "endMonth": 4,
+    "note": "Panen saat 80–90% malai menguning dan butir mengeras. (Sulawesi, dataran rendah)",
+    "_index": 4
+  },
+  {
+    "id": "jagung-sulawesi-olah_lahan",
+    "commodityId": "jagung",
+    "zoneId": "sulawesi",
+    "activity": "olah_lahan",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Olah minimal, buat larikan, dan siapkan mulsa. (Sulawesi, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "jagung-sulawesi-tanam",
+    "commodityId": "jagung",
+    "zoneId": "sulawesi",
+    "activity": "tanam",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Tanam pada awal hujan, jarak 70 × 25 cm, 2 benih per lubang. (Sulawesi, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "jagung-sulawesi-pemupukan",
+    "commodityId": "jagung",
+    "zoneId": "sulawesi",
+    "activity": "pemupukan",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "NPK dasar saat tanam, urea saat 21 dan 42 hari. (Sulawesi, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "jagung-sulawesi-panen",
+    "commodityId": "jagung",
+    "zoneId": "sulawesi",
+    "activity": "panen",
+    "startMonth": 2,
+    "endMonth": 3,
+    "note": "Panen tongkol saat kelopak kering dan biji keras. (Sulawesi, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "tomat-sulawesi-semai",
+    "commodityId": "tomat",
+    "zoneId": "sulawesi",
+    "activity": "semai",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Semai di tray, gunakan media steril untuk cegah layu. (Sulawesi, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "tomat-sulawesi-tanam",
+    "commodityId": "tomat",
+    "zoneId": "sulawesi",
+    "activity": "tanam",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Tanam dengan jarak 60 × 60 cm dan pasang ajir. (Sulawesi, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "tomat-sulawesi-pemupukan",
+    "commodityId": "tomat",
+    "zoneId": "sulawesi",
+    "activity": "pemupukan",
+    "startMonth": 12,
+    "endMonth": 2,
+    "note": "Berikan kalium lebih banyak saat pembentukan buah. (Sulawesi, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "tomat-sulawesi-panen",
+    "commodityId": "tomat",
+    "zoneId": "sulawesi",
+    "activity": "panen",
+    "startMonth": 2,
+    "endMonth": 4,
+    "note": "Panen buah yang mulai merah untuk menekan serangan jamur. (Sulawesi, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "bawang-merah-sulawesi-olah_lahan",
+    "commodityId": "bawang-merah",
+    "zoneId": "sulawesi",
+    "activity": "olah_lahan",
+    "startMonth": 5,
+    "endMonth": 6,
+    "note": "Buat bedengan tinggi dan gunakan mulsa hitam/putih. (Sulawesi, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "bawang-merah-sulawesi-tanam",
+    "commodityId": "bawang-merah",
+    "zoneId": "sulawesi",
+    "activity": "tanam",
+    "startMonth": 6,
+    "endMonth": 7,
+    "note": "Tanam umbi bibit di awal kemarau, kedalaman 2–3 cm. (Sulawesi, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "bawang-merah-sulawesi-pemupukan",
+    "commodityId": "bawang-merah",
+    "zoneId": "sulawesi",
+    "activity": "pemupukan",
+    "startMonth": 7,
+    "endMonth": 8,
+    "note": "Pupuk NPK dan kalium, hentikan nitrogen menjelang pembentukan umbi. (Sulawesi, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "bawang-merah-sulawesi-panen",
+    "commodityId": "bawang-merah",
+    "zoneId": "sulawesi",
+    "activity": "panen",
+    "startMonth": 9,
+    "endMonth": 10,
+    "note": "Panen saat daun menguning dan umbi mengeras. (Sulawesi, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "kedelai-sulawesi-olah_lahan",
+    "commodityId": "kedelai",
+    "zoneId": "sulawesi",
+    "activity": "olah_lahan",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Olah lahan setelah padi, pertahankan mulsa jerami. (Sulawesi, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "kedelai-sulawesi-tanam",
+    "commodityId": "kedelai",
+    "zoneId": "sulawesi",
+    "activity": "tanam",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Tanam dengan jarak 40 × 20 cm setelah lahan cukup lembap. (Sulawesi, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "kedelai-sulawesi-pemupukan",
+    "commodityId": "kedelai",
+    "zoneId": "sulawesi",
+    "activity": "pemupukan",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Inokulasi rizobium dan berikan P dasar. (Sulawesi, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "kedelai-sulawesi-panen",
+    "commodityId": "kedelai",
+    "zoneId": "sulawesi",
+    "activity": "panen",
+    "startMonth": 2,
+    "endMonth": 3,
+    "note": "Panen saat 90% polong cokelat dan biji lepas dari kulit. (Sulawesi, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "cabai-kalimantan-semai",
+    "commodityId": "cabai",
+    "zoneId": "kalimantan",
+    "activity": "semai",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Semai di bedengan teduh, sirup embun dan hindari genangan. (Kalimantan, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "cabai-kalimantan-olah_lahan",
+    "commodityId": "cabai",
+    "zoneId": "kalimantan",
+    "activity": "olah_lahan",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Olah lahan, tambahkan kompos, dan buat bedengan tinggi 20–30 cm. (Kalimantan, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "cabai-kalimantan-tanam",
+    "commodityId": "cabai",
+    "zoneId": "kalimantan",
+    "activity": "tanam",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Pindah tanam bibit umur 25–30 hari pada pagi atau sore hari. (Kalimantan, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "cabai-kalimantan-pemupukan",
+    "commodityId": "cabai",
+    "zoneId": "kalimantan",
+    "activity": "pemupukan",
+    "startMonth": 1,
+    "endMonth": 3,
+    "note": "Pupuk susulan bertahap: NPK dasar, lalu urea/kalium sesuai analisis tanah. (Kalimantan, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "cabai-kalimantan-panen",
+    "commodityId": "cabai",
+    "zoneId": "kalimantan",
+    "activity": "panen",
+    "startMonth": 3,
+    "endMonth": 6,
+    "note": "Panen bertahap saat buah merah penuh, 2–3 hari sekali. (Kalimantan, dataran rendah)",
+    "_index": 4
+  },
+  {
+    "id": "padi-kalimantan-semai",
+    "commodityId": "padi",
+    "zoneId": "kalimantan",
+    "activity": "semai",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Semai benih di pesemaian, genangan 2–3 cm. (Kalimantan, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "padi-kalimantan-olah_lahan",
+    "commodityId": "padi",
+    "zoneId": "kalimantan",
+    "activity": "olah_lahan",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Bajak, perata, dan perbaiki pematang tangki air. (Kalimantan, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "padi-kalimantan-tanam",
+    "commodityId": "padi",
+    "zoneId": "kalimantan",
+    "activity": "tanam",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Tanam bibit umur 18–25 hari dengan jarak 20 × 20 cm. (Kalimantan, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "padi-kalimantan-pemupukan",
+    "commodityId": "padi",
+    "zoneId": "kalimantan",
+    "activity": "pemupukan",
+    "startMonth": 1,
+    "endMonth": 2,
+    "note": "Urea dan NPK pada 7, 21, dan 35 hari setelah tanam. (Kalimantan, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "padi-kalimantan-panen",
+    "commodityId": "padi",
+    "zoneId": "kalimantan",
+    "activity": "panen",
+    "startMonth": 4,
+    "endMonth": 5,
+    "note": "Panen saat 80–90% malai menguning dan butir mengeras. (Kalimantan, dataran rendah)",
+    "_index": 4
+  },
+  {
+    "id": "jagung-kalimantan-olah_lahan",
+    "commodityId": "jagung",
+    "zoneId": "kalimantan",
+    "activity": "olah_lahan",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Olah minimal, buat larikan, dan siapkan mulsa. (Kalimantan, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "jagung-kalimantan-tanam",
+    "commodityId": "jagung",
+    "zoneId": "kalimantan",
+    "activity": "tanam",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Tanam pada awal hujan, jarak 70 × 25 cm, 2 benih per lubang. (Kalimantan, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "jagung-kalimantan-pemupukan",
+    "commodityId": "jagung",
+    "zoneId": "kalimantan",
+    "activity": "pemupukan",
+    "startMonth": 1,
+    "endMonth": 2,
+    "note": "NPK dasar saat tanam, urea saat 21 dan 42 hari. (Kalimantan, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "jagung-kalimantan-panen",
+    "commodityId": "jagung",
+    "zoneId": "kalimantan",
+    "activity": "panen",
+    "startMonth": 3,
+    "endMonth": 4,
+    "note": "Panen tongkol saat kelopak kering dan biji keras. (Kalimantan, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "tomat-kalimantan-semai",
+    "commodityId": "tomat",
+    "zoneId": "kalimantan",
+    "activity": "semai",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Semai di tray, gunakan media steril untuk cegah layu. (Kalimantan, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "tomat-kalimantan-tanam",
+    "commodityId": "tomat",
+    "zoneId": "kalimantan",
+    "activity": "tanam",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Tanam dengan jarak 60 × 60 cm dan pasang ajir. (Kalimantan, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "tomat-kalimantan-pemupukan",
+    "commodityId": "tomat",
+    "zoneId": "kalimantan",
+    "activity": "pemupukan",
+    "startMonth": 1,
+    "endMonth": 3,
+    "note": "Berikan kalium lebih banyak saat pembentukan buah. (Kalimantan, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "tomat-kalimantan-panen",
+    "commodityId": "tomat",
+    "zoneId": "kalimantan",
+    "activity": "panen",
+    "startMonth": 3,
+    "endMonth": 5,
+    "note": "Panen buah yang mulai merah untuk menekan serangan jamur. (Kalimantan, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "bawang-merah-kalimantan-olah_lahan",
+    "commodityId": "bawang-merah",
+    "zoneId": "kalimantan",
+    "activity": "olah_lahan",
+    "startMonth": 6,
+    "endMonth": 7,
+    "note": "Buat bedengan tinggi dan gunakan mulsa hitam/putih. (Kalimantan, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "bawang-merah-kalimantan-tanam",
+    "commodityId": "bawang-merah",
+    "zoneId": "kalimantan",
+    "activity": "tanam",
+    "startMonth": 7,
+    "endMonth": 8,
+    "note": "Tanam umbi bibit di awal kemarau, kedalaman 2–3 cm. (Kalimantan, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "bawang-merah-kalimantan-pemupukan",
+    "commodityId": "bawang-merah",
+    "zoneId": "kalimantan",
+    "activity": "pemupukan",
+    "startMonth": 8,
+    "endMonth": 9,
+    "note": "Pupuk NPK dan kalium, hentikan nitrogen menjelang pembentukan umbi. (Kalimantan, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "bawang-merah-kalimantan-panen",
+    "commodityId": "bawang-merah",
+    "zoneId": "kalimantan",
+    "activity": "panen",
+    "startMonth": 10,
+    "endMonth": 11,
+    "note": "Panen saat daun menguning dan umbi mengeras. (Kalimantan, dataran rendah)",
+    "_index": 3
+  },
+  {
+    "id": "kedelai-kalimantan-olah_lahan",
+    "commodityId": "kedelai",
+    "zoneId": "kalimantan",
+    "activity": "olah_lahan",
+    "startMonth": 11,
+    "endMonth": 12,
+    "note": "Olah lahan setelah padi, pertahankan mulsa jerami. (Kalimantan, dataran rendah)",
+    "_index": 0
+  },
+  {
+    "id": "kedelai-kalimantan-tanam",
+    "commodityId": "kedelai",
+    "zoneId": "kalimantan",
+    "activity": "tanam",
+    "startMonth": 12,
+    "endMonth": 1,
+    "note": "Tanam dengan jarak 40 × 20 cm setelah lahan cukup lembap. (Kalimantan, dataran rendah)",
+    "_index": 1
+  },
+  {
+    "id": "kedelai-kalimantan-pemupukan",
+    "commodityId": "kedelai",
+    "zoneId": "kalimantan",
+    "activity": "pemupukan",
+    "startMonth": 1,
+    "endMonth": 2,
+    "note": "Inokulasi rizobium dan berikan P dasar. (Kalimantan, dataran rendah)",
+    "_index": 2
+  },
+  {
+    "id": "kedelai-kalimantan-panen",
+    "commodityId": "kedelai",
+    "zoneId": "kalimantan",
+    "activity": "panen",
+    "startMonth": 3,
+    "endMonth": 4,
+    "note": "Panen saat 90% polong cokelat dan biji lepas dari kulit. (Kalimantan, dataran rendah)",
+    "_index": 3
+  }
+]
