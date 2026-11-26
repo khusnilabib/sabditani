@@ -7,6 +7,7 @@ interface Env {
   WEB_REVALIDATE_URL?: string;
   REVALIDATE_SECRET?: string;
   ALLOWED_ORIGIN?: string;
+  MEDIA_PUBLIC_BASE?: string;
   MEDIA: R2Bucket;
 }
 
@@ -82,10 +83,12 @@ async function handleMedia(request: Request, env: Env, staff: Staff) {
   }
 
   const form = await request.formData();
-  const files = (form.getAll('file') as unknown[]).filter(
+  const allFiles = (form.getAll('file') as unknown[]).filter(
     (entry): entry is File => typeof entry !== 'string' && typeof (entry as File).arrayBuffer === 'function'
   );
+  const files = allFiles.filter((entry) => !entry.name.includes('_480'));
   if (!files.length) return fail('Berkas tidak ditemukan.', 400);
+  const mediaBase = (env.MEDIA_PUBLIC_BASE ?? 'https://pub-b44339b46b4c4ef09f8ce14505d7dccd.r2.dev').replace(/\/$/, '');
   const created: { url: string; thumbUrl?: string; key: string }[] = [];
   for (const file of files) {
     if (file.size > 2_000_000) return fail('Ukuran berkas maksimal 2 MB.', 413);
@@ -99,7 +102,7 @@ async function handleMedia(request: Request, env: Env, staff: Staff) {
       httpMetadata: { contentType: `image/${ext === 'jpg' ? 'jpeg' : ext}` },
       customMetadata: { uploadedBy: staff.id },
     });
-    const thumbCandidate = files.find((entry) => entry.name.startsWith(file.name.replace(/\.[^.]+$/, '')) && entry.name.includes('_480'));
+    const thumbCandidate = allFiles.find((entry) => entry !== file && entry.name.startsWith(file.name.replace(/\.[^.]+$/, '')) && entry.name.includes('_480'));
     let thumbKey: string | undefined;
     if (thumbCandidate) {
       thumbKey = key.replace(/\.[^.]+$/, `_480.${ext}`);
@@ -107,8 +110,8 @@ async function handleMedia(request: Request, env: Env, staff: Staff) {
         httpMetadata: { contentType: `image/${ext === 'jpg' ? 'jpeg' : ext}` },
       });
     }
-    const publicBase = `https://media.sabditani.id/${key}`;
-    created.push({ key, url: publicBase, thumbUrl: thumbKey ? `https://media.sabditani.id/${thumbKey}` : undefined });
+    const publicBase = `${mediaBase}/${key}`;
+    created.push({ key, url: publicBase, thumbUrl: thumbKey ? `${mediaBase}/${thumbKey}` : undefined });
     await fetch(`${env.SUPABASE_URL}/rest/v1/media_assets`, {
       method: 'POST',
       headers: serviceHeaders(env),

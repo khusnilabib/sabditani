@@ -55,6 +55,8 @@ export interface Guide {
   readingMinutes: number;
   tags: string[];
   body: string;
+  coverUrl?: string;
+  coverAlt?: string;
 }
 
 export interface Pest {

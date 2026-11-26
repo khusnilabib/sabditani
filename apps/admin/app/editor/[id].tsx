@@ -57,16 +57,24 @@ export default function EditorScreen() {
   const set = (key: keyof Form, value: string | boolean) => setForm((current) => ({ ...current, [key]: value }));
   const insert = (text: string) => setForm((current) => ({ ...current, bodyMd: `${current.bodyMd}${current.bodyMd.endsWith('\n') || !current.bodyMd ? '' : '\n'}${text}` }));
 
-  const addPhoto = async () => {
-    const permission = await ImagePicker.requestCameraPermissionsAsync();
+  const addPhoto = async (fromCamera: boolean) => {
+    const permission = fromCamera
+      ? await ImagePicker.requestCameraPermissionsAsync()
+      : await ImagePicker.requestMediaLibraryPermissionsAsync();
     if (!permission.granted) return;
-    const result = await ImagePicker.launchCameraAsync({ quality: 0.8 });
+    const result = fromCamera
+      ? await ImagePicker.launchCameraAsync({ quality: 0.8 })
+      : await ImagePicker.launchImageLibraryAsync({ mediaTypes: ImagePicker.MediaTypeOptions.Images, quality: 0.8 });
     if (result.canceled || !result.assets?.length) return;
     const uri = result.assets[0].uri;
     try {
-      const compressed = await ImageManipulator.manipulateAsync(uri, [{ resize: { width: 1600 } }], { compress: 0.8, format: ImageManipulator.SaveFormat.WEBP });
-      addMedia({ uri: compressed.uri, name: `foto-lapangan-${Date.now()}.webp` });
-      insert(`\n![Foto lapangan](${compressed.uri})\n`);
+      const full = await ImageManipulator.manipulateAsync(uri, [{ resize: { width: 1600 } }], { compress: 0.8, format: ImageManipulator.SaveFormat.WEBP });
+      const thumb = await ImageManipulator.manipulateAsync(uri, [{ resize: { width: 480 } }], { compress: 0.75, format: ImageManipulator.SaveFormat.WEBP });
+      addMedia({
+        uri: full.uri, thumbUri: thumb.uri, articleId: draft.id,
+        name: `foto-lapangan-${Date.now()}.webp`,
+      });
+      insert(`\n![Foto lapangan](${full.uri})\n`);
     } catch { insert(`\n![Foto lapangan](${uri})\n`); }
   };
 
@@ -104,7 +112,8 @@ export default function EditorScreen() {
                 <Text style={{ color: c.primary, fontSize: 12, fontWeight: '600' }}>{item.label}</Text>
               </Pressable>
             ))}
-            <Pressable onPress={() => void addPhoto()} style={styles.toolButton}><Text style={{ color: c.primary, fontSize: 12, fontWeight: '600' }}>Foto</Text></Pressable>
+            <Pressable onPress={() => void addPhoto(true)} style={styles.toolButton}><Text style={{ color: c.primary, fontSize: 12, fontWeight: '600' }}>Kamera</Text></Pressable>
+            <Pressable onPress={() => void addPhoto(false)} style={styles.toolButton}><Text style={{ color: c.primary, fontSize: 12, fontWeight: '600' }}>Galeri</Text></Pressable>
           </View>
         </ScrollView>
       )}

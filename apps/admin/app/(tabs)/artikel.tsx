@@ -17,7 +17,7 @@ function tone(status: ArticleDraft['status']) {
 
 export default function ArticlesScreen() {
   const router = useRouter();
-  const { drafts, createDraft, deleteDraft } = useAdmin();
+  const { drafts, createDraft, deleteDraft, conflicts, resolveConflict } = useAdmin();
   const [filter, setFilter] = useState<(typeof filters)[number]>('Semua');
   const [query, setQuery] = useState('');
 
@@ -63,6 +63,18 @@ export default function ArticlesScreen() {
               {new Date(draft.updatedAt).toLocaleString('id-ID')} · v{draft.version}
             </Text>
           </Pressable>
+          {conflicts[draft.id] ? (
+            <View style={{ marginTop: 12, padding: 12, borderRadius: 12, backgroundColor: c.sunken, borderWidth: 1, borderColor: c.line }}>
+              <Text style={{ fontSize: 13, color: c.ink, lineHeight: 19 }}>
+                Versi server lebih baru (v{conflicts[draft.id].version}). Pilih mana yang dipakai.
+              </Text>
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 10 }}>
+                <Button title="Pakai versi saya" small onPress={() => void resolveConflict(draft.id, 'mine')} />
+                <Button title="Pakai server" variant="secondary" small onPress={() => void resolveConflict(draft.id, 'theirs')} />
+                <Button title="Simpan keduanya" variant="ghost" small onPress={() => void resolveConflict(draft.id, 'both')} />
+              </View>
+            </View>
+          ) : null}
           <View style={{ flexDirection: 'row', gap: 8, marginTop: 12 }}>
             <Button title="Sunting" variant="secondary" small onPress={() => router.push(`/editor/${draft.id}`)} />
             {draft.status !== 'published' && <Button title="Terbitkan" small onPress={() => router.push(`/terbitkan/${draft.id}`)} />}

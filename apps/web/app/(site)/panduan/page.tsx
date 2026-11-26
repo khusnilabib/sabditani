@@ -29,6 +29,7 @@ export default function PanduanPage() {
         <div className="grid-2">
           {guides.map((guide) => (
             <Link key={guide.id} href={`/panduan/${guide.slug}`} className="card card-hover">
+              {guide.coverUrl && <img className="guide-card-cover" src={guide.coverUrl} alt="" loading="lazy" width={800} height={450} />}
               <span className="tag">{categories.find((c) => c.slug === guide.category)?.name ?? guide.category}</span>
               <h3 style={{ marginTop: 12 }}>{guide.title}</h3>
               <p>{guide.summary}</p>

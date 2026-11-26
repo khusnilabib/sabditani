@@ -11,8 +11,8 @@ const c = theme.light.colors;
 export default function LoginScreen() {
   const router = useRouter();
   const { signIn } = useAdmin();
-  const [email, setEmail] = useState(isBackendConfigured ? '' : 'admin@sabditani.id');
-  const [password, setPassword] = useState(isBackendConfigured ? '' : 'demo12345');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -42,9 +42,9 @@ export default function LoginScreen() {
         </Card>
         {!isBackendConfigured && (
           <View style={{ backgroundColor: '#F5EBCB', borderRadius: 12, padding: 14 }}>
-            <Text style={{ fontWeight: '700', fontSize: 13, color: c.accentText }}>Mode demo lokal</Text>
+            <Text style={{ fontWeight: '700', fontSize: 13, color: c.accentText }}>Backend belum dikonfigurasi</Text>
             <Text style={{ fontSize: 13, color: c.inkMuted, lineHeight: 20, marginTop: 4 }}>
-              Supabase belum dikonfigurasi. Gunakan email apa pun dan kata sandi minimal 6 karakter. Semua data tersimpan hanya di perangkat ini.
+              Isi EXPO_PUBLIC_SUPABASE_URL dan EXPO_PUBLIC_SUPABASE_ANON_KEY, lalu restart aplikasi. Mode demo sudah dimatikan untuk produksi.
             </Text>
           </View>
         )}

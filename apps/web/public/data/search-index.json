@@ -63,6 +63,48 @@
     "keywords": "cabai panen"
   },
   {
+    "type": "panduan",
+    "title": "Budidaya Tomat: Jarak Tanam dan Pemangkasan Tandan",
+    "summary": "Mengatur jarak tanam, jumlah tandan, dan pemangkasan agar buah tomat seragam dan mudah dipanen.",
+    "url": "/panduan/budidaya-tomat",
+    "keywords": "tomat jarak tanam pemangkasan"
+  },
+  {
+    "type": "panduan",
+    "title": "Budidaya Bawang Merah: Jarak Tanam dan Pengairan",
+    "summary": "Langkah menyiapkan bedeng, menanam umbi, dan mengatur air supaya bawang merah tidak busuk.",
+    "url": "/panduan/budidaya-bawang-merah",
+    "keywords": "bawang merah irigasi umbi"
+  },
+  {
+    "type": "panduan",
+    "title": "Budidaya Kedelai: Waktu Tanam dan Pengelolaan Air",
+    "summary": "Memilih waktu tanam kedelai, mengatur genangan, dan mengenali tanda panen yang tepat.",
+    "url": "/panduan/budidaya-kedelai",
+    "keywords": "kedelai polong drainase"
+  },
+  {
+    "type": "panduan",
+    "title": "Pengendalian Terpadu Hama Cabai dan Tomat",
+    "summary": "Urutan pengendalian budidaya, hayati, lalu kimia yang aman untuk cabai dan tomat.",
+    "url": "/panduan/pengendalian-hama-terpadu",
+    "keywords": "hama pengendalian terpadu cabai tomat"
+  },
+  {
+    "type": "panduan",
+    "title": "Pemupukan Padi: Dosis dan Waktu Aplikasi",
+    "summary": "Membagi dosis NPK padi agar hara tersedia saat tanaman paling membutuhkannya.",
+    "url": "/panduan/pemupukan-padi",
+    "keywords": "padi npk pemupukan"
+  },
+  {
+    "type": "panduan",
+    "title": "Pengeringan dan Penyimpanan Gabah Pasca Panen",
+    "summary": "Menurunkan kadar air gabah, memilih alat pengering, dan mencegah jamur saat disimpan.",
+    "url": "/panduan/pengeringan-gabah",
+    "keywords": "padi pengeringan penyimpanan"
+  },
+  {
     "type": "komoditas",
     "title": "Cabai",
     "summary": "Tanaman buah bernilai tinggi yang sensitif terhadap air dan suhu.",

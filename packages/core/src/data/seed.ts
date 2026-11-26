@@ -363,6 +363,178 @@ Laba = pendapatan − biaya. R/C = pendapatan ÷ biaya. BEP harga = biaya ÷ has
 - Jangan mencuci sebelum disimpan.
 - Simpan di tempat teduh dengan sirkulasi udara baik.`,
   }),
+  guide({
+    id: 'g10', slug: 'budidaya-tomat', title: 'Budidaya Tomat: Jarak Tanam dan Pemangkasan Tandan',
+    summary: 'Mengatur jarak tanam, jumlah tandan, dan pemangkasan agar buah tomat seragam dan mudah dipanen.',
+    category: 'budidaya', commodityId: 'tomat', author: 'Andi Wijaya', authorRole: 'Penulis pertanian',
+    publishedAt: '2026-11-04', updatedAt: '2026-11-20', fieldVerified: false,
+    coverUrl: '/media/guides/budidaya-tomat.webp', coverAlt: 'Ilustrasi barisan tanaman tomat pada kebun kecil di Jawa.',
+    readingMinutes: 6, tags: ['tomat', 'jarak tanam', 'pemangkasan'],
+    body: `Tomat tumbuh cepat dan mudah rimbun. Bila jarak tanam terlalu rapat, sirkulasi udara buruk dan bercak daun lebih mudah muncul.
+
+## Menentukan jarak
+
+Untuk varietas tomat tegak, pakai jarak 60 × 60 cm pada bedengan lebar 120 cm. Varietas yang merambat dapat 70 × 50 cm dengan satu ajir per tanaman.
+
+[[hitung:populasi]]
+
+## Mengatur tandan
+
+- Pertahankan 4–5 tandan per tanaman untuk hasil yang mudah dipanen.
+- Buang tunas lateral di bawah tandan pertama sebelum tumbuh panjang.
+- Pangkas daun bawah yang menyentuh tanah setelah buah mulai mengkal.
+- Pasang ajir saat tanaman mencapai 30 cm, jangan menunggu miring.
+
+:::catatan
+Pemangkasan berlebihan justru membuat buah terpapar matahari dan mudah sunscald. Sisakan cukup daun untuk melindungi buah.
+:::
+
+:::peringatan
+Gunakan sarung tangan saat memangkas tanaman yang telah disemprot. Cuci tangan setelah bekerja dan jangan memakan buah sebelum masa tunggu terpenuhi.
+:::`,
+  }),
+  guide({
+    id: 'g11', slug: 'budidaya-bawang-merah', title: 'Budidaya Bawang Merah: Jarak Tanam dan Pengairan',
+    summary: 'Langkah menyiapkan bedeng, menanam umbi, dan mengatur air supaya bawang merah tidak busuk.',
+    category: 'budidaya', commodityId: 'bawang-merah', author: 'Sari Rahmawati', authorRole: 'Penyuluh lapangan',
+    publishedAt: '2026-11-06', updatedAt: '2026-11-21', fieldVerified: false,
+    coverUrl: '/media/guides/budidaya-bawang-merah.webp', coverAlt: 'Ilustrasi barisan bawang merah dengan umbi yang dijemur.',
+    readingMinutes: 5, tags: ['bawang merah', 'irigasi', 'umbi'],
+    body: `Bawang merah sensitif terhadap genangan. Kuncinya adalah bedeng yang gembur, drainase yang lancar, dan pengairan yang dikurangi menjelang panen.
+
+## Menyiapkan bedeng
+
+Buat bedeng tinggi 20–25 cm dengan lebar 100–120 cm. Campurkan kompos matang 5–8 ton per hektar. Pilih umbi benih sehat, kering, dan tidak berlendir.
+
+## Jarak dan waktu tanam
+
+Tanam dengan jarak 15 × 15 cm, kedalaman 3–4 cm. Tutup tipis dengan tanah dan mulsa jerami. Siram segera setelah tanam sampai lembap, bukan becek.
+
+## Pengairan
+
+- 1–2 minggu pertama: siram pagi atau sore setiap hari bila tanah cepat kering.
+- 3–6 minggu: siram 2–3 kali seminggu, sesuaikan cuaca.
+- 7–8 minggu: kurangi frekuensi siram hingga daun mulai menguning.
+- Hentikan pengairan 7–10 hari sebelum panen.
+
+:::peringatan
+Jangan menanam bawang merah pada lahan yang pernah terserang busuk umbi dalam dua musim terakhir. Gunakan benih bersertifikat bila tersedia.
+:::`,
+  }),
+  guide({
+    id: 'g12', slug: 'budidaya-kedelai', title: 'Budidaya Kedelai: Waktu Tanam dan Pengelolaan Air',
+    summary: 'Memilih waktu tanam kedelai, mengatur genangan, dan mengenali tanda panen yang tepat.',
+    category: 'budidaya', commodityId: 'kedelai', author: 'Sari Rahmawati', authorRole: 'Penyuluh lapangan',
+    publishedAt: '2026-11-08', updatedAt: '2026-11-22', fieldVerified: false,
+    coverUrl: '/media/guides/budidaya-kedelai.webp', coverAlt: 'Ilustrasi tanaman kedelai dengan polong muda di lahan kering.',
+    readingMinutes: 5, tags: ['kedelai', 'polong', 'drainase'],
+    body: `Kedelai tidak tahan genangan, terutama saat pembungaan. Tanam pada awal musim hujan agar fase pengisian polong berada di akhir musim hujan.
+
+## Waktu dan cara tanam
+
+- Tanam di awal musim hujan, setelah hujan pertama cukup untuk menglembapkan tanah.
+- Jarak 40 × 15 cm, dua benih per lubang, kedalaman 2–3 cm.
+- Buat parit drainase setiap 3–4 baris pada lahan berat.
+
+## Pengelolaan air
+
+Jaga tanah tetap lembap sampai polong terbentuk. Bila hujan deras lebih dari dua hari, buang air dari parit segera. Saat polong menguning, kurangi air secara bertahap.
+
+## Tanda panen
+
+Panen ketika 80–90% polong berubah kuning kecokelatan dan biji berbunyi pelan saat dikocok. Panen pagi hari untuk mengurangi biji rontok.
+
+:::catatan
+Pola tanam kedelai dapat disesuaikan dengan kalender wilayah Anda. Lihat Kalender Tanam untuk memilih bulan yang sesuai.
+:::`,
+  }),
+  guide({
+    id: 'g13', slug: 'pengendalian-hama-terpadu', title: 'Pengendalian Terpadu Hama Cabai dan Tomat',
+    summary: 'Urutan pengendalian budidaya, hayati, lalu kimia yang aman untuk cabai dan tomat.',
+    category: 'hama-penyakit', commodityId: 'cabai', author: 'Andi Wijaya', authorRole: 'Penulis pertanian',
+    publishedAt: '2026-11-10', updatedAt: '2026-11-23', fieldVerified: false,
+    coverUrl: '/media/guides/pengendalian-hama-terpadu.webp', coverAlt: 'Ilustrasi perangkap kuning pada tanaman cabai sebagai bagian dari pengendalian terpadu.',
+    readingMinutes: 7, tags: ['hama', 'pengendalian terpadu', 'cabai', 'tomat'],
+    body: `Pengendalian terpadu dimulai dari mencegah bloom populasi hama, bukan langsung menyemprot. Urutannya: budidaya, hayati, baru kimia bila perlu.
+
+## 1. Budidaya
+
+- Gunakan benih sehat dan bibit bebas gejala.
+- Pasang mulsa perak untuk menekan gulma dan mengganggu kutu keputih.
+- Bersihkan sisa tanaman dan gulma inang di sekitar kebun.
+- Jaga jarak tanam agar daun cepat kering setelah hujan.
+
+## 2. Hayati
+
+Pasang perangkap kuning lengket untuk kutu keputih dan trips. Lepaskan predator alami bila tersedia dari penyuluh setempat. Semprotan neem dapat dipakai pada populasi awal.
+
+## 3. Kimia
+
+Gunakan insektisida terdaftar hanya bila ambang batas terlampaui. Rotasi golongan aktif agar hama tidak cepat resisten. Baca label, ukur dosis, dan catat tanggal aplikasi.
+
+:::peringatan
+Gunakan sarung tangan, masker, dan pakaian tertutup. Semprot pagi atau sore, hindari tanaman berbunga terbuka agar penyerbuk tidak terdampak. Jangan menyemprot menjelang hujan.
+:::
+
+:::catatan
+Bila gejala tidak membaik dalam 3–4 hari, bawa contoh daun ke penyuluh atau petugas setempat. Lihat halaman Diagnosa Gejala untuk memilih kemungkinan penyebab.
+:::`,
+  }),
+  guide({
+    id: 'g14', slug: 'pemupukan-padi', title: 'Pemupukan Padi: Dosis dan Waktu Aplikasi',
+    summary: 'Membagi dosis NPK padi agar hara tersedia saat tanaman paling membutuhkannya.',
+    category: 'pemupukan', commodityId: 'padi', author: 'Andi Wijaya', authorRole: 'Penulis pertanian',
+    publishedAt: '2026-11-12', updatedAt: '2026-11-24', fieldVerified: false,
+    coverUrl: '/media/guides/pemupukan-padi.webp', coverAlt: 'Ilustrasi sawah padi dengan ember pupuk di pematang.',
+    readingMinutes: 6, tags: ['padi', 'npk', 'pemupukan'],
+    body: `Padi membutuhkan nitrogen paling banyak pada fase vegetatif awal sampai awal pembungaan. Pemberian sekaligus mudah hilang karena pencucian dan penguapan.
+
+## Dosis panduan
+
+Untuk lahan dengan kesuburan menengah, NPK 16-16-16 sekitar 250–350 kg per hektar ditambah urea 100–150 kg per hektar, dibagi tiga aplikasi. Sesuaikan dengan analisis tanah.
+
+[[hitung:pupuk]]
+
+## Waktu aplikasi
+
+| Waktu | Kegiatan | Catatan |
+|---|---|---|
+| 7–10 hari setelah tanam | Urea + NPK dosis pertama | Gunakan pupuk dasar yang ditanam bersama bila tersedia |
+| 25–30 hari setelah tanam | Urea + NPK | Aplikasi sebelum atau setelah air masuk |
+| 45–50 hari setelah tanam | NPK + kalium | Menjelang bunga, kurangi nitrogen |
+
+:::peringatan
+Gunakan sarung tangan dan masker. Jangan menyebar pupuk saat daun masih basah atau hujan akan turun. Jauhkan pupuk dari sumber air minum.
+:::
+
+:::catatan
+Angka di atas panduan umum. Varietas, kesuburan tanah, dan pengelolaan air setempat dapat mengubah kebutuhan hara.
+:::`,
+  }),
+  guide({
+    id: 'g15', slug: 'pengeringan-gabah', title: 'Pengeringan dan Penyimpanan Gabah Pasca Panen',
+    summary: 'Menurunkan kadar air gabah, memilih alat pengering, dan mencegah jamur saat disimpan.',
+    category: 'pascapanen', commodityId: 'padi', author: 'Sari Rahmawati', authorRole: 'Penyuluh lapangan',
+    publishedAt: '2026-11-14', updatedAt: '2026-11-25', fieldVerified: false,
+    coverUrl: '/media/guides/pengeringan-gabah.webp', coverAlt: 'Ilustrasi gabah yang dijemur tipis di atas terpal.',
+    readingMinutes: 5, tags: ['padi', 'pengeringan', 'penyimpanan'],
+    body: `Gabah yang disimpan terlalu basah cepat berjamur dan berbau. Target kadar air aman adalah sekitar 12–14% sebelum digiling atau disimpan.
+
+## Cara mengeringkan
+
+- Jemur di terpal bersih, bukan langsung di tanah.
+- Ketebalan lapisan maksimal 3–4 cm dan dibalik setiap 30–60 menit.
+- Gunakan pengering mesin bila hujan terus-menerus, dengan suhu terkendali.
+- Hentikan pengeringan saat biji keras dan tidak lengket saat digigit.
+
+## Penyimpanan
+
+Simpan dalam karung bersih dan kering di tempat berventilasi, terhindar dari dinding lembap. Pisahkan gabah benih dari gabah konsumsi. Periksa secara berkala untuk mendeteksi kelembapan atau serangga.
+
+:::peringatan
+Jangan menjemur gabah di jalan raya. Debu, knalpot, dan air hujan dapat mencemarkan gabah dan menurunkan mutu beras.
+:::`,
+  }),
 ];
 
 export const calcParams = {

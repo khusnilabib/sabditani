@@ -18,7 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: guide.title,
     description: guide.summary,
     alternates: { canonical: `/panduan/${guide.slug}` },
-    openGraph: { type: 'article', title: guide.title, description: guide.summary, url: `/panduan/${guide.slug}`, publishedTime: guide.publishedAt, modifiedTime: guide.updatedAt },
+    openGraph: {
+      type: 'article', title: guide.title, description: guide.summary, url: `/panduan/${guide.slug}`,
+      publishedTime: guide.publishedAt, modifiedTime: guide.updatedAt,
+      images: guide.coverUrl ? [{ url: guide.coverUrl, alt: guide.coverAlt ?? guide.title }] : undefined,
+    },
   };
 }
 
@@ -62,6 +66,12 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       </header>
       <div className="container article-layout">
         <article>
+          {guide.coverUrl && (
+            <figure className="guide-cover">
+              <img src={guide.coverUrl} alt={guide.coverAlt ?? `Ilustrasi lahan untuk panduan ${guide.title}`} width={800} height={450} loading="eager" fetchPriority="high" />
+              <figcaption>Ilustrasi lapangan. Angka dan langkah tetap mengikuti kondisi lahan Anda.</figcaption>
+            </figure>
+          )}
           <div className="article-meta">
             <span>Oleh <strong>{guide.author}</strong>, {guide.authorRole}</span>
             <span>Terbit {formatDate(guide.publishedAt)}</span>

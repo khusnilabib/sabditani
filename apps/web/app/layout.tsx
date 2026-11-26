@@ -1,10 +1,4 @@
 import type { Metadata } from 'next';
-import '@fontsource/fraunces/latin-500.css';
-import '@fontsource/fraunces/latin-600.css';
-import '@fontsource/fraunces/latin-500-italic.css';
-import '@fontsource/plus-jakarta-sans/latin-400.css';
-import '@fontsource/plus-jakarta-sans/latin-600.css';
-import '@fontsource/plus-jakarta-sans/latin-700.css';
 import '../styles/tokens.css';
 import './globals.css';
 import { ThemeProvider } from '@/components/ThemeProvider';
@@ -46,6 +40,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="id" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <link rel="preload" href="/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="icon" href="/brand/logo-icon-transparent.png" />
       </head>
       <body>

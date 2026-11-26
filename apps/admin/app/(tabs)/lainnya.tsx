@@ -28,7 +28,7 @@ export default function MoreScreen() {
   return (
     <Screen>
       <Brand />
-      <Heading title="Pengaturan" subtitle={session?.demo ? 'Mode demo lokal' : `Masuk sebagai ${session?.email ?? ''}`} />
+      <Heading title="Pengaturan" subtitle={session?.email ? `Masuk sebagai ${session.email}` : 'Belum masuk'} />
       <Card>
         <Text style={{ fontSize: 12, fontWeight: '700', color: c.inkMuted, letterSpacing: 1, textTransform: 'uppercase', marginBottom: 8 }}>Data & konten</Text>
         <Row label="Komoditas & Kalender" note="Atur profil tanaman dan jendela waktu" onPress={() => router.push('/komoditas')} />
@@ -43,7 +43,7 @@ export default function MoreScreen() {
         <Divider />
         <Row label="Sinkron otomatis" note="Kirim antrean saat sinyal kembali" right={<Switch value={settings.autoSync} onValueChange={(value) => updateSettings({ autoSync: value })} />} />
         <Divider />
-        <Row label="Status backend" note={isBackendConfigured ? 'Supabase & Worker terkonfigurasi' : 'Berjalan dalam mode demo lokal'} right={<Badge label={isBackendConfigured ? 'Aktif' : 'Demo'} tone={isBackendConfigured ? 'success' : 'warning'} />} />
+        <Row label="Status backend" note={isBackendConfigured ? 'Supabase & Worker terkonfigurasi' : 'Belum dikonfigurasi'} right={<Badge label={isBackendConfigured ? 'Aktif' : 'Nonaktif'} tone={isBackendConfigured ? 'success' : 'warning'} />} />
       </Card>
       <Card>
         <Text style={{ fontSize: 12, fontWeight: '700', color: c.inkMuted, letterSpacing: 1, textTransform: 'uppercase', marginBottom: 8 }}>Cadangan</Text>

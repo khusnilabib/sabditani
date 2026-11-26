@@ -16,3 +16,6 @@ coverage/
 supabase/.temp/
 
 out/
+
+# Wrangler local state/cache
+.wrangler/
