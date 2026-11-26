@@ -2,10 +2,12 @@
 *::before,
 *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; max-width: 100%; }
 
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: clip;
   background: var(--canvas);
   color: var(--ink);
   font-family: var(--font-ui);
@@ -67,12 +69,16 @@ p { margin: 0; }
 
 /* ---------- Site header ---------- */
 .site-header {
-  position: sticky; top: 0; z-index: 40;
+  position: sticky; top: 0; z-index: 50; width: 100%;
   background: color-mix(in srgb, var(--canvas) 88%, transparent);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
-.site-header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 24px; }
+.site-header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 24px; min-width: 0; }
+.search-trigger-label { display: inline-flex; align-items: center; gap: 8px; }
+.header-cta { gap: 8px; }
+.app-site-icon { display: none; }
 .site-nav { display: flex; align-items: center; gap: 28px; }
 .site-nav a { font-size: 14px; font-weight: 600; color: var(--ink-muted); transition: color .15s; }
 .site-nav a:hover, .site-nav a[aria-current='page'] { color: var(--primary); }
@@ -160,7 +166,7 @@ p { margin: 0; }
 .article h3 { font-size: 22px; margin: 32px 0 12px; }
 .article p, .article li { margin-bottom: 16px; }
 .article ol, .article ul { padding-left: 24px; }
-.article table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 24px 0; }
+.article table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 24px 0; display: block; overflow-x: auto; white-space: nowrap; }
 .article th, .article td { border-bottom: 1px solid var(--line); padding: 12px 10px; text-align: left; }
 .article th { background: var(--sunken); font-weight: 700; }
 .callout { border-left: 3px solid var(--accent); background: var(--gold100); padding: 18px 20px; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin: 28px 0; font-size: 16px; }
@@ -184,7 +190,8 @@ p { margin: 0; }
 .site-footer-bottom { border-top: 1px solid var(--line); padding: 20px 0; display: flex; justify-content: space-between; gap: 16px; font-size: 13px; color: var(--ink-muted); }
 
 /* ---------- App shell ---------- */
-.app-shell { display: flex; min-height: 100vh; }
+.app-shell { display: flex; min-height: 100vh; max-width: 100%; overflow-x: clip; }
+.app-topbar > div { min-width: 0; }
 .app-rail {
   width: 216px; flex-shrink: 0; border-right: 1px solid var(--line); background: var(--surface);
   display: flex; flex-direction: column; padding: 20px 12px; position: sticky; top: 0; height: 100vh;
@@ -255,7 +262,7 @@ input[type='range'] { width: 100%; accent-color: var(--primary); }
 /* ---------- Calendar ---------- */
 .calendar-controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: end; margin-bottom: 24px; }
 .calendar-controls .field { margin: 0; min-width: 190px; }
-.calendar-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); }
+.calendar-scroll { overflow-x: auto; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); }
 .calendar-grid { min-width: 760px; padding: 20px; }
 .calendar-head, .calendar-row { display: grid; grid-template-columns: 130px repeat(12, minmax(38px, 1fr)); align-items: center; gap: 3px; }
 .calendar-head span { text-align: center; font-size: 11px; font-weight: 700; color: var(--ink-muted); padding-bottom: 10px; }
@@ -340,6 +347,13 @@ kbd { font-family: var(--font-ui); font-size: 11px; border: 1px solid var(--line
   .app-topbar { padding: 0 20px; }
   .app-content { padding: 28px 20px 100px; }
   .mobile-only { display: inline-flex; }
+  .app-topbar-date { display: none; }
+  .site-header-inner { min-height: 60px; gap: 8px; }
+  .site-header .brand-icon { width: 32px; height: 32px; }
+  .site-header .brand-word strong { font-size: 16px; }
+  .site-header .brand-word small { display: none; }
+  .header-actions { gap: 2px; }
+  .app-site-link { padding-inline: 10px; }
   .bottom-nav {
     display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 35;
     background: var(--surface); border-top: 1px solid var(--line);
@@ -351,15 +365,40 @@ kbd { font-family: var(--font-ui); font-size: 11px; border: 1px solid var(--line
 }
 @media (max-width: 599px) {
   .container, .container-narrow { width: min(100% - 32px, 1200px); }
-  .section { padding: 56px 0; }
-  .hero h1 { font-size: 42px; }
+  .section { padding: 48px 0; }
+  .hero { padding: 40px 0 36px; }
+  .hero h1 { font-size: 38px; }
+  .hero-card { padding: 20px; border-radius: var(--radius-lg); }
+  .hero-actions .btn { width: 100%; }
   .lead { font-size: 16px; }
   .section-head { align-items: flex-start; flex-direction: column; }
   .site-footer-inner { grid-template-columns: 1fr; gap: 28px; }
   .site-footer-bottom { flex-direction: column; }
-  .app-topbar { height: 60px; }
+  .card { padding: 18px; }
+
+  /* Header jadi ringkas: ikon saja, tidak melebar dan tidak ikut tergeser. */
+  .site-header-inner { min-height: 56px; }
+  .search-trigger-label { display: none; }
+  .search-trigger { width: 44px; min-height: 44px; padding: 0; }
+  .header-cta-text { display: none; }
+  .header-cta { min-width: 44px; min-height: 44px; padding: 0 12px; }
+  .header-actions .icon-btn { width: 40px; height: 40px; }
+
+  .app-topbar { height: 56px; padding: 0 14px; }
+  .app-topbar .icon-btn { width: 40px; height: 40px; }
+  .app-site-label { display: none; }
+  .app-site-icon { display: block; }
+  .app-site-link { width: 40px; min-height: 40px; padding: 0; }
+  .app-content { padding: 24px 16px 96px; }
+  .app-page-head h1 { font-size: 30px; }
+  .bottom-nav a { font-size: 9px; }
+  .bottom-nav svg { width: 18px; height: 18px; }
   .stat-grid, .scenario-grid { grid-template-columns: 1fr; }
   .calendar-grid { padding: 12px; }
+  .article { font-size: 16px; line-height: 1.75; }
+  .article h2 { font-size: 25px; }
+  .result-number { font-size: 44px; }
+  .notice, .callout { padding: 12px 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

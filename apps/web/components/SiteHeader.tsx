@@ -33,8 +33,9 @@ export function SiteHeader() {
           <button className="icon-btn" onClick={toggle} aria-label={mode === 'dark' ? 'Gunakan tema terang' : 'Gunakan tema gelap'}>
             {mode === 'dark' ? <IconSun /> : <IconMoon />}
           </button>
-          <Link className="btn btn-primary btn-small" href="/app">
-            Buka Aplikasi <IconArrow style={{ width: 16, height: 16 }} />
+          <Link className="btn btn-primary btn-small header-cta" href="/app" aria-label="Buka aplikasi SABDITANI">
+            <span className="header-cta-text">Buka Aplikasi</span>
+            <IconArrow style={{ width: 16, height: 16 }} />
           </Link>
         </div>
       </div>

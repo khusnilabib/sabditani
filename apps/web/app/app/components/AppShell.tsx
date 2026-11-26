@@ -42,14 +42,17 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <header className="app-topbar">
           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <span className="mobile-only"><BrandMark href="/app" compact /></span>
-            <span className="muted small">{formatDate(new Date())}</span>
+            <span className="muted small app-topbar-date">{formatDate(new Date())}</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
             <SearchLauncher variant="app" />
             <button className="icon-btn" onClick={toggle} aria-label="Ganti tema">
               {mode === 'dark' ? <IconSun /> : <IconMoon />}
             </button>
-            <Link className="btn btn-ghost btn-small" href="/">Situs ↗</Link>
+            <Link className="btn btn-ghost btn-small app-site-link" href="/" aria-label="Buka situs SABDITANI">
+              <span className="app-site-label">Situs ↗</span>
+              <IconExternal className="app-site-icon" style={{ width: 16, height: 16 }} />
+            </Link>
           </div>
         </header>
         <main className="app-content">{children}</main>

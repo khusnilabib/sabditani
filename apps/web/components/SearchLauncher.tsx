@@ -40,12 +40,12 @@ export function SearchLauncher({ variant = 'site' }: { variant?: 'site' | 'app' 
     <>
       <button
         type="button"
-        className={variant === 'app' ? 'icon-btn' : 'btn btn-secondary btn-small'}
+        className={variant === 'app' ? 'icon-btn' : 'btn btn-secondary btn-small search-trigger'}
         onClick={() => setOpen(true)}
         aria-label="Buka pencarian"
       >
         <IconSearch />
-        {variant === 'site' && <span style={{ display: 'flex', alignItems: 'center', gap: 8 }}>Cari <kbd>⌘K</kbd></span>}
+        {variant === 'site' && <span className="search-trigger-label">Cari <kbd>⌘K</kbd></span>}
       </button>
       {open && (
         <div className="palette-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setOpen(false); }}>
