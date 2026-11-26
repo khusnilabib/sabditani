@@ -62,12 +62,14 @@ export function Markdown({ source }: { source: string }) {
       const cells = rows.map((row) => row.split('|').slice(1, -1).map((cell) => cell.trim()));
       const [header, ...body] = cells;
       blocks.push(
-        <table key={`table-${blocks.length}`}>
-          <thead><tr>{header.map((cell, i) => <th key={i}>{inline(cell, `th-${i}`)}</th>)}</tr></thead>
-          <tbody>
-            {body.map((row, i) => <tr key={i}>{row.map((cell, j) => <td key={j}>{inline(cell, `td-${i}-${j}`)}</td>)}</tr>)}
-          </tbody>
-        </table>
+        <div key={`table-${blocks.length}`} className="table-scroll" role="region" aria-label="Tabel data, dapat digeser secara horizontal" tabIndex={0}>
+          <table>
+            <thead><tr>{header.map((cell, i) => <th key={i}>{inline(cell, `th-${i}`)}</th>)}</tr></thead>
+            <tbody>
+              {body.map((row, i) => <tr key={i}>{row.map((cell, j) => <td key={j}>{inline(cell, `td-${i}-${j}`)}</td>)}</tr>)}
+            </tbody>
+          </table>
+        </div>
       );
       table = null;
     }

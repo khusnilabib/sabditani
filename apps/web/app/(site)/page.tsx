@@ -5,7 +5,7 @@ import {
 } from '@sabditani/core';
 import { ContourBackdrop } from '@/components/ContourBackdrop';
 import { VerifiedSeal } from '@/components/VerifiedSeal';
-import { IconArrow, IconCalculator, IconCalendar, IconDiagnose, IconExternal } from '@/components/Icons';
+import { IconArrow, IconCalculator, IconCalendar, IconDiagnose, IconExternal, IconLeaf, IconSeal } from '@/components/Icons';
 
 export default function HomePage() {
   const now = new Date();
@@ -39,7 +39,12 @@ export default function HomePage() {
               <Link className="btn btn-primary" href="/app">Lihat yang cocok ditanam sekarang <IconArrow style={{ width: 18, height: 18 }} /></Link>
               <Link className="btn btn-secondary" href="/panduan">Baca panduan</Link>
             </div>
-            <p className="muted small reveal reveal-5" style={{ marginTop: 20 }}>{formatDate(now)} · Panduan pertanian berbahasa Indonesia</p>
+            <div className="trust-row reveal reveal-5">
+              <span><IconSeal /> Ditulis & diperiksa</span>
+              <span><IconCalculator /> Asumsi ditampilkan</span>
+              <span><IconLeaf /> Tanpa janji panen</span>
+            </div>
+            <p className="muted small reveal reveal-5" style={{ marginTop: 10 }}>{formatDate(now)} · Panduan pertanian berbahasa Indonesia</p>
           </div>
           <aside className="hero-card reveal reveal-3" aria-label="Ringkasan kegiatan bulan ini">
             <span className="eyebrow">Sedang waktunya</span>

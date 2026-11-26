@@ -5,7 +5,7 @@ Sumber PRD: `docs/PRD-v3-original.md` (kanonik). Status diperiksa pada **26 Nove
 
 | Info | Nilai |
 |---|---|
-| Commit produksi web | `f8b14aa` (`main`) · checklist `90eae1a` |
+| Commit produksi web | `baad51c` (`main`) · checklist `90eae1a` |
 | Web live | https://sabditani.pages.dev |
 | Repo | https://github.com/khusnilabib/sabditani |
 | Supabase | Proyek `sabditani-mvp`, ref `uzjskaeqenfwsyoxceqx`; migrasi + seed diterapkan |
@@ -28,7 +28,7 @@ Sumber PRD: `docs/PRD-v3-original.md` (kanonik). Status diperiksa pada **26 Nove
 | Admin mobile | ◐ | CRUD Supabase + RLS, unggah 2 ukuran, konflik versi, demo dimatikan; pengelolaan kalender/gejala/parameter masih lokal |
 | Supabase & RLS | ✅ | Admin pertama dibuat, signup mati, uji anon/viewer/editor/admin lulus |
 | Worker/R2/publish E2E | ✅ | Worker live, R2 + CORS aktif, `/v1/publish` memicu deploy produksi |
-| Responsivitas & kualitas | ✅ | Axe 0 pelanggaran, sentuh 48 px, zoom 200% tanpa overflow, Lighthouse 91–99 |
+| Responsivitas & kualitas | ✅ | Navigasi mobile/f sidebar terpisah, axe 0 pelanggaran di 45 rute, sentuh 48 px, zoom 200%, Lighthouse 90–100 |
 | Kesiapan peluncuran PRD §23 | ◐ | Sisa: foto lapangan asli, domain media khusus, backup/monitoring, APK, uji perangkat |
 
 ---
@@ -103,7 +103,7 @@ Sumber PRD: `docs/PRD-v3-original.md` (kanonik). Status diperiksa pada **26 Nove
 
 | ID | Target PRD | Status | Bukti / catatan |
 |---|---|---|---|
-| N-01 | LCP ≤ 2,5 dtk, CLS ≤ 0,05 | ◐ | Lighthouse produksi: halaman panduan LCP **2,0 dtk**, detail panduan **2,7 dtk**, beranda **3,3 dtk**; **CLS 0,00** di semua halaman yang diuji |
+| N-01 | LCP ≤ 2,5 dtk, CLS ≤ 0,05 | ◐ | Lighthouse produksi terbaru: `/app` **2,7 dtk**, `/panduan/` **2,8 dtk**, detail panduan **3,1 dtk**, beranda **3,2 dtk**; **CLS 0,00** di semua halaman yang diuji |
 | N-02 | Layar pertama ≤ 4 dtk | ✅ | LCP produksi 2,0–3,3 dtk (mobile throttled) |
 | N-03 | ≥ 60 fps desktop, ≥ 45 fps Android entry | ◐ | Belum diprofilkan di perangkat nyata |
 | N-04 | WCAG 2.2 AA | ✅ | Axe-core: **0 pelanggaran** di `/`, `/panduan/`, detail panduan, `/app/`, `/app/kalender/`; target sentuh **48 px**; reduced-motion aktif |
@@ -158,8 +158,9 @@ Sumber PRD: `docs/PRD-v3-original.md` (kanonik). Status diperiksa pada **26 Nove
 |---|---|---|
 | Kalender, 3 alat, pencarian di perangkat target | ◐ | Berfungsi; matrix Chrome/Safari/Samsung Internet & Slow 4G belum |
 | Token desain tunggal dipakai web + admin | ✅ | Generator + CI drift check |
+| Navigasi & alur | ✅ | Menu situs (drawer kanan) dan sidebar aplikasi (drawer kiri) terpisah; bottom nav hanya 4 item; semua halaman aplikasi terjangkau dari menu |
 | Kontras & mode gelap | ✅ | Axe 0 pelanggaran; bug token sebelumnya sudah diperbaiki |
-| Skala teks 200% | ✅ | Uji viewport 195 px: tanpa overflow di 5 rute utama |
+| Skala teks 200% | ✅ | Uji viewport 195 px: tanpa overflow di 5 rute utama; menu tetap dapat dibuka pada zoom 200% |
 | Teks UI sesuai panduan | ✅ | "Anda", `1.000,5`, `Rp`, tanggal Indonesia, tanpa janji panen |
 | Tentang, Metodologi, Kontak, Privasi, disclaimer | ✅ | Semua tersedia |
 
@@ -184,7 +185,7 @@ Sumber PRD: `docs/PRD-v3-original.md` (kanonik). Status diperiksa pada **26 Nove
 | 2 | Publish end-to-end | ✅ | Worker + secrets + R2 + CORS aktif; `/v1/publish` memicu `repository_dispatch` dan deploy Pages sukses |
 | 3 | Admin backend nyata | ✅ | Demo dimatikan; CRUD artikel via Supabase/RLS; unggah 1600 px + 480 px ke R2; autosave 5 dtk; retry antrean; UI konflik versi |
 | 4 | Auth & keamanan | ✅ | Admin pertama, signup mati, uji RLS 4 peran lulus |
-| 5 | Kualitas | ✅ | Axe 0 pelanggaran; target sentuh 48 px; zoom 200% tanpa overflow; Lighthouse produksi 91/99/96 |
+| 5 | Kualitas | ✅ | Axe 0 pelanggaran; target sentuh 48 px; zoom 200% tanpa overflow; Lighthouse produksi 90/95/94; navigasi dan identitas brand disempurnakan |
 
 ### P1 — berikutnya
 
@@ -217,17 +218,18 @@ Sumber PRD: `docs/PRD-v3-original.md` (kanonik). Status diperiksa pada **26 Nove
 | Worker `/health` | ✅ `{"ok":true,"service":"sabditani-api"}` |
 | Uji unggah Worker | ✅ 1 item dikembalikan, URL utama & thumbnail `200`, ukuran 1600 px + 480 px |
 | RLS | ✅ anon 401, viewer 403, editor 201/tidak bisa hapus, admin hapus 204 |
-| Lighthouse produksi `/` | performance **91** · a11y **98** · best practices **100** · SEO **100** · LCP 3,3 dtk · CLS 0 |
-| Lighthouse produksi `/panduan/` | performance **99** · a11y **98** · best practices **100** · SEO **100** · LCP 2,0 dtk · CLS 0 |
-| Lighthouse produksi `/panduan/budidaya-tomat/` | performance **96** · a11y **98** · best practices **100** · SEO **100** · LCP 2,7 dtk · CLS 0 |
-| Axe-core 5 rute | ✅ **0 pelanggaran** WCAG 2.0/2.1/2.2 AA |
+| Lighthouse produksi `/` | performance **90** · a11y **98** · best practices **100** · SEO **100** · LCP 3,2 dtk · CLS 0 |
+| Lighthouse produksi `/panduan/` | performance **95** · a11y **98** · best practices **100** · SEO **100** · LCP 2,8 dtk · CLS 0 |
+| Lighthouse produksi `/panduan/budidaya-tomat/` | performance **94** · a11y **98** · best practices **100** · SEO **100** · LCP 3,1 dtk · CLS 0 |
+| Lighthouse produksi `/app/` | performance **95** · a11y **100** · best practices **100** · SEO **100** · LCP 2,7 dtk · CLS 0 |
+| Axe-core 45 rute + 2 drawer | ✅ **0 pelanggaran** WCAG 2.0/2.1/2.2 AA pada ukuran 390 px; menu situs dan menu aplikasi juga lolos pada zoom 200% |
 | Viewport 390 px & 195 px (zoom 200%) | ✅ tanpa overflow horizontal; target sentuh minimum 48 px |
 | Live `sabditani.pages.dev` | ✅ `/`, `/panduan/`, detail panduan, font, gambar, `/data/manifest.json` → 200 |
 | Snapshot data | 6 komoditas · 130 kalender · 5 wilayah · 6 hama · 8 gejala · **15 panduan** · 30 indeks cari |
-| Git | web `f8b14aa`, checklist `90eae1a`, working tree bersih |
+| Git | web `baad51c`, checklist `90eae1a`, working tree bersih |
 
 ---
 
-**Kesimpulan:** seluruh **P0 selesai dan terverifikasi di produksi**. Sisa ketidaksesuaian dengan definisi "produksi penuh" PRD kini hanya pada hal yang tidak bisa dibereskan tanpa aset/akses tambahan: **foto lapangan asli**, **domain media khusus**, **backup/monitoring**, **APK rilis**, dan **uji perangkat nyata**—semuanya masuk P1.
+**Kesimpulan:** seluruh **P0 selesai dan terverifikasi di produksi**, termasuk penyempurnaan navigasi mobile, sidebar aplikasi yang terpisah dari menu situs, serta identitas brand yang konsisten dengan tagline **sarana abdi tani**. Sisa ketidaksesuaian dengan definisi "produksi penuh" PRD kini hanya pada hal yang tidak bisa dibereskan tanpa aset/akses tambahan: **foto lapangan asli**, **domain media khusus**, **backup/monitoring**, **APK rilis**, dan **uji perangkat nyata**—semuanya masuk P1.
 
 Diperbarui: 26 November 2026 · Pemilik: tim SABDITANI · Status dokumen: **aktif**.

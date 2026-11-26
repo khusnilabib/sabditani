@@ -42,7 +42,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <link rel="preload" href="/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="icon" href="/brand/logo-icon-transparent.png" />
+        <link rel="icon" href="/brand/logo-mark.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/brand/logo-icon-transparent.png" />
       </head>
       <body>
         <ThemeProvider>{children}</ThemeProvider>

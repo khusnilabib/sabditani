@@ -34,14 +34,14 @@ export default function TodayPage() {
           <span className="season-pill"><span className="dot" /> {seasonLabels[season]} · {monthNames[month - 1]}</span>
           <h1 style={{ fontSize: 'clamp(34px, 5vw, 54px)', margin: '18px 0 12px' }}>Hari ini di lahan</h1>
           <p className="lead">{seasonMessage(season)}</p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 28, alignItems: 'end' }}>
-            <div className="field" style={{ margin: 0, minWidth: 210 }}>
+          <div className="app-hero-controls" style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 28, alignItems: 'end' }}>
+            <div className="field" style={{ margin: 0 }}>
               <label htmlFor="zone">Wilayah</label>
               <select id="zone" className="select" value={zone.id} onChange={(e) => setZoneId(e.target.value)}>
                 {zones.map((z) => <option key={z.id} value={z.id}>{z.name}</option>)}
               </select>
             </div>
-            <div className="field" style={{ margin: 0, minWidth: 180 }}>
+            <div className="field" style={{ margin: 0 }}>
               <label htmlFor="crop">Komoditas</label>
               <select id="crop" className="select" value={crop.id} onChange={(e) => setCropId(e.target.value)}>
                 {commodities.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}

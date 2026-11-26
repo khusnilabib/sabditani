@@ -36,3 +36,6 @@ export const IconClose = (p: IconProps) => <svg {...base(p)}><path d="M6 6l12 12
 export const IconChevron = (p: IconProps) => <svg {...base(p)}><path d="m9 6 6 6-6 6" /></svg>;
 export const IconDownload = (p: IconProps) => <svg {...base(p)}><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v3h16v-3" /></svg>;
 export const IconWhatsapp = (p: IconProps) => <svg {...base(p)}><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.2A8 8 0 1 1 20 11.5Z" /><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a6 6 0 0 1-3-3l1-1-1-2h-1.5z" /></svg>;
+export const IconMenu = (p: IconProps) => <svg {...base(p)}><path d="M4 7h16M4 12h16M4 17h16" /></svg>;
+export const IconGrid = (p: IconProps) => <svg {...base(p)}><rect x="3.5" y="3.5" width="7" height="7" rx="1.5" /><rect x="13.5" y="3.5" width="7" height="7" rx="1.5" /><rect x="3.5" y="13.5" width="7" height="7" rx="1.5" /><rect x="13.5" y="13.5" width="7" height="7" rx="1.5" /></svg>;
+export const IconSprout = (p: IconProps) => <svg {...base(p)}><path d="M12 21v-8" /><path d="M12 13C7 13 4 10 4 5c4.5 0 8 2.5 8 8Z" /><path d="M12 15c0-5 3-8 8-8 0 4.5-2.8 8-8 8Z" /></svg>;
